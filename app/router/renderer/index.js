@@ -10,10 +10,11 @@ function RendererServer() {}
 RendererServer.viewsDir = process.cwd() + '/app/views';
 
 RendererServer.prototype.render = function(component, req, res) {
+
   var html = React.renderToString(component);
 
   var locals = {
-    body: html,
+    body: html
   };
 
   wrapWithLayout(locals, function(err, layoutHtml) {

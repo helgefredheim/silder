@@ -4,28 +4,41 @@ module.exports = function(match) {
   match('/', function(callback) {
     console.log('index');
 
-    callback(null, 'Index');
-  });
+    apiClient.get('/products.json', function(err, res) {
 
-  match('/posts', function(callback) {
-    console.log('posts');
+      console.log("callback", callback)
 
-    apiClient.get('/posts.json', function(err, res) {
       if (err) return callback(err);
 
-      var posts = res.body;
-      callback(null, 'Posts', {posts: posts});
+      var products = res.body;
+      callback(null, 'Frontpage', {products: products});
+    });
+
+  });
+
+  match('/products/:slug', function(slug, callback) {
+    console.log('product: ' + slug);
+
+    apiClient.get('/products/' + slug + '.json', function(err, res) {
+      if (err) return callback(err);
+
+      var product = res.body;
+      callback(null, 'Product', product);
     });
   });
 
-  match('/posts/:id', function(id, callback) {
-    console.log('post: ' + id);
+  match('/shoppingcart', function(callback) {
+    console.log('cart');
 
-    apiClient.get('/posts/' + id + '.json', function(err, res) {
+    apiClient.get('/shoppingcart.json', function(err, res) {
       if (err) return callback(err);
 
-      var post = res.body;
-      callback(null, 'Post', post);
+      var cartProducts = res.body;
+
+      callback(null, 'ShoppingCart', {
+        products: cartProducts
+      });
     });
-  });
+  });  
+
 };

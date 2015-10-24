@@ -48,7 +48,7 @@ Router.prototype.getRouteHandler = function(handler) {
     var handleErr = router.renderer.handleErr.bind(routeContext);
     var handlerContext = {
       req: this.req,
-      res: this.res,
+      res: this.res
     };
 
     function handleRoute() {
@@ -62,7 +62,6 @@ Router.prototype.getRouteHandler = function(handler) {
         data.renderer = isServer ? 'server' : 'client';
 
         var component = router.getComponent(viewPath, data);
-
         router.renderer.render(component, routeContext.req, routeContext.res);
       }));
     }

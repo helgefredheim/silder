@@ -1,0 +1,52 @@
+body {
+	background-color: @color-body-background; 
+	color: @color-text; 
+}
+
+.container {
+	width: 100%;
+	max-width: 1280px; 
+	box-sizing: border-box;
+	margin-left: auto; 
+	margin-right: auto; 
+	padding-left: 1em; 
+	padding-right: 1em; 
+}
+
+.solid {
+	background-color: white; 
+}
+
+.section {
+	padding-top: 1em; 
+	padding-bottom: 1em; 
+	position: relative;
+	z-index: 1; 
+}
+
+.section--fullscreen {
+	display: block; 
+	min-height: 100vh; 
+}
+
+.well {
+	padding-top: 1em;
+	padding-bottom: 1em; 
+}
+
+.highlighted {
+	background-color: @color-well-background;	
+}
+
+img {
+	display: block;
+	max-width: 100%; 
+	height: auto; 
+}
+
+@media(min-width: @screen-m) {
+	.container {
+		padding-left: 1.25em; 
+		padding-right: 1.25em; 
+	}
+}

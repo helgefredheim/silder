@@ -1,0 +1,8 @@
+module.exports = {
+	SITE_TITLE: "Silder",
+	DEFAULT_PAGE: "pages/page",
+	PORT: process.env.PORT || 1234,
+	CONTENTFUL_ACCESS_TOKEN: "edec86ff5677197b92c13886e21c68a957847b42989e162b2e6dc3d87bc07014",
+	CONTENTFUL_SPACE: "r6i7kl3cf3eu",
+	PRODUCT_CONTENTTYPE_ID: "28TdK3Rxju4gImicoeqyOm"
+};

@@ -7,7 +7,13 @@
     "start": "node index.js",
     "dev": "grunt server",
     "debug": "grunt server:debug",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:client:styles": "lessc assets/styles/styles.less > public/styles.css",
+    "watch:client": "parallelshell \"npm run watch:client:css\" \"npm run watch:client:scripts\"",
+    "watch:client:styles": "nodemon -q -w assets/styles --ext 'less' --exec 'npm run build:client:styles'",
+    "watch:client:scripts": "watchify -t babelify app/initialize.js -o public/scripts.js",
+    "grunt": "parallelshell \"grunt watch\" \"grunt server\"",
+    "watch": "parallelshell \"nodemon index.js\" \"npm run watch:client:scripts\" \"npm run watch:client:styles\"",
+    "watch:server": "parallelshell \"nodemon -w views node index.js\" \"nodemon -w index.js node index.js\" \"nodemon -w server.js node index.js\""
   },
   "repository": {
     "type": "git",
@@ -19,13 +25,19 @@
     "url": "https://github.com/spikebrehm/isomorphic-tutorial/issues"
   },
   "dependencies": {
+    "babelify": "^6.3.0",
+    "backbone": "^1.2.3",
     "body-parser": "^1.11.0",
+    "contentful": "^1.1.5",
     "director": "^1.2.7",
     "express": "^4.11.2",
+    "express-session": "^1.11.3",
     "handlebars": "^2.0.0",
     "http-proxy": "~0.10.3",
     "jquery-browserify": "~1.8.1",
+    "marked": "^0.3.5",
     "node-jsx": "^0.12.4",
+    "paypal-rest-sdk": "^1.6.3",
     "react": "^0.12.2",
     "superagent": "^0.21.0",
     "underscore": "^1.7.0"
@@ -35,6 +47,7 @@
     "grunt": "~0.4.1",
     "grunt-browserify": "~1.2.9",
     "grunt-concurrent": "~0.4.1",
+    "grunt-contrib-less": "^1.0.1",
     "grunt-contrib-stylus": "~0.10.0",
     "grunt-contrib-watch": "~0.5.3",
     "grunt-node-inspector": "~0.1.1",

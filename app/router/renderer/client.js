@@ -9,7 +9,7 @@ function RendererClient() {}
 
 RendererClient.viewsDir = 'app/views';
 
-RendererClient.prototype.render = function(component) {
+RendererClient.prototype.render = function(component, req, res) {
   React.render(component, document.getElementById('view-container'));
 };
 

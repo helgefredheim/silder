@@ -28,14 +28,13 @@ module.exports = function (grunt) {
       },
     },
 
-    stylus: {
-      main: {
+    less: {
+      development: {
         options: {
-          paths: ['assets/stylesheets'],
-          'include css': true
+          paths: ["assets/styles"]
         },
         files: {
-          'public/styles.css': 'assets/stylesheets/index.styl'
+          "public/styles.css": "assets/styles/styles.less"
         }
       }
     },
@@ -52,17 +51,15 @@ module.exports = function (grunt) {
     watch: {
       app: {
         files: 'app/**/*',
-        tasks: ['browserify'],
-        options: {
-          interrupt: true
-        }
+        tasks: ['browserify']
       },
       styles: {
-        files: 'assets/stylesheets/**/*',
-        tasks: ['stylus'],
-        options: {
-          interrupt: true
-        }
+        files: 'assets/styles/**/*',
+        tasks: ['less:development']
+      },
+      lib: {
+        files: 'lib/**/*',
+        tasks: ['browserify']
       }
     },
 
@@ -89,7 +86,7 @@ module.exports = function (grunt) {
 
   require('load-grunt-tasks')(grunt);
 
-  grunt.registerTask('compile', ['browserify', 'stylus']);
+  grunt.registerTask('compile', ['browserify', 'less:development']);
   grunt.registerTask('default', ['compile']);
   grunt.registerTask('server', ['compile', 'concurrent']);
   grunt.registerTask('server:debug', ['compile', 'concurrent:debug']);

@@ -5,6 +5,7 @@ module.exports = function middleware(router) {
   var directorRouter = router.directorRouter;
 
   return function middleware(req, res, next) {
+
     // Attach `this.next` to route handler, for better handling of errors.
     directorRouter.attach(function() {
       this.next = next;

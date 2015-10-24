@@ -1,4 +1,5 @@
 var express = require('express');
+var session = require("express-session");
 var app = express();
 var port = process.env.PORT || 3030;
 var apiPort = process.env.API_PORT || 3031;

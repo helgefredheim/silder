@@ -1,0 +1,43 @@
+body {
+	line-height: 1.3;
+	font-family: @font-family-base;
+	font-size: 120%
+}
+
+p {
+	margin: 0;
+	margin-bottom: 1em; 
+}
+
+.section-title {
+	background-color: inherit; 
+	font-size: 1.5em; 
+	text-align: center;
+	text-transform: uppercase; 
+	position: relative;
+	letter-spacing: 2px; 
+	font-weight: 400; 
+	margin-bottom: 1.2em; 
+	margin-top: 1em; 
+
+	&:after {
+		content: ""; 
+		display: block;
+		width: 100%; 
+		height: 2px; 
+		position: absolute; 
+		top: 50%; 
+		background: @color-text;
+		transform: translateY(-50%); 
+		z-index: 10; 
+	}
+
+	span {
+		position: relative;
+		background-color: inherit;
+		display: inline-block;  
+		padding-left: 1em;
+		padding-right: 1em;  
+		z-index: 20; 
+	}
+}
