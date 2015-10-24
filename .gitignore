@@ -18,3 +18,5 @@ node_modules
 *.swo
 public/scripts.js
 public/styles.css
+settings.js
+public
