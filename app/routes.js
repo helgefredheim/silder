@@ -5,9 +5,6 @@ module.exports = function(match) {
     console.log('index');
 
     apiClient.get('/products.json', function(err, res) {
-
-      console.log("callback", callback)
-
       if (err) return callback(err);
 
       var products = res.body;
