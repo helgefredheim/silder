@@ -17,7 +17,4 @@ node_modules
 *.swp
 *.swo
 .env
-public/scripts.js
-public/styles.css
 settings.js
-public
