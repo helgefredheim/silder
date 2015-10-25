@@ -39,6 +39,7 @@
     "http-proxy": "~0.10.3",
     "jquery-browserify": "~1.8.1",
     "less": "2.5.3",
+    "load-grunt-tasks": "3.3.0",
     "marked": "^0.3.5",
     "node-jsx": "^0.12.4",
     "paypal-rest-sdk": "^1.6.3",
