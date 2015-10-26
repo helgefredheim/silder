@@ -7,10 +7,6 @@ var About = React.createClass({
 						<h2 className="section-title">
 							<span>{this.props.title}</span>
 						</h2>
-
-						<div className="varsel-bjelle-container">
-							<span className="varsel-bjelle"></span>
-						</div>
 					</div>
 				</div>
 	}

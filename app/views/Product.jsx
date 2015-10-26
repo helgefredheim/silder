@@ -36,7 +36,7 @@ var Product = React.createClass({
 							</div>
 						</div>
 					</section> 
-					
+					<Footer />
 				</div> 
 	}
 });

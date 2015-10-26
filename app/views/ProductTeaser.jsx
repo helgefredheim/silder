@@ -10,7 +10,7 @@ var ProductTeaser = React.createClass({
 	render: function() {
 		return <article cols="4" className={this.props.className}>
 					<a href={this.getUrl()} className="img-container">
-						<img alt={this.props.imageTitle} src={this.props.imageUrl + "?fit=thumb&w=450&h=450"} />
+						<img alt={this.props.imageTitle} src={this.props.imageUrl + "?fit=thumb&w=600&h=600"} />
 					</a>
 					<h2>
 						<a href={this.getUrl()}>
