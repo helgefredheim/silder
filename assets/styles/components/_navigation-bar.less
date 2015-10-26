@@ -1,9 +1,9 @@
 .page--product {
-	margin-top: 5em; 
+	margin-top: 3em; 
 }
 
 .page-header {
-	padding: 1em 0; 
+	padding: .5em 0; 
 	height: 1.55em; 
 	position: fixed; 
 	width: 100%; 
@@ -11,4 +11,15 @@
 	background: #fff; 
 	border-bottom: 1px solid @color-border;
 	z-index: 999; 
+}
+
+@media(min-width: @screen-m) {
+
+	.page--product {
+		margin-top: 5em; 
+	}
+
+	.page-header {
+		padding: 1em 0; 
+	}
 }

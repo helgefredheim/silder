@@ -20,14 +20,10 @@ var NavigationBar = React.createClass({
 
 	render: function() {
 		return <div className="page-header">
-					<header>
-						<div className="container">
-							<div className="silder-row">
-								<h1 className='site-logo column' cols="4">
-									<a href="/">{this.props.title}</a>
-								</h1>
-							</div>
-						</div>
+					<header className="container container--site-logo">
+						<h1 className='site-logo site-logo--small'>
+							<a href="/">{this.props.title}</a>
+						</h1>
 					</header>
 				</div>
 	}

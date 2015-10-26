@@ -4,13 +4,8 @@
 	background-attachment: fixed;
 	width: 100%; 
 	height: 100vh; 
-	position: fixed; 	
-	background-size: cover;
+	position: fixed;
 	transform: translateZ(0);
-}
-
-.parallax--frontpage {
-	background-image: url('images/stumtjener.png');
 }
 
 .frontpage-banner {
@@ -27,7 +22,7 @@
 .frontpage-header-btns {
 	text-align: center;
 	position: absolute;
-	bottom: 3em; 
+	bottom: 6em; 
 	left: 50%; 
 	transform: translateX(-50%);
 }
@@ -70,12 +65,17 @@
 	}
 }
 
+.container--site-logo {
+	text-align: center; 
+}
+
 .site-logo {
 	margin: 0; 
 	width: 211px;
 	height: 30px; 
 	padding: 0; 
 	display: inline-block;
+	transform: scale(1, 1);
 
 	a {
 		display: block;
@@ -90,4 +90,10 @@
 .site-header, .frontpage-header {
 	padding-top: 2em; 
 	padding-bottom: 1em; 
+}
+
+@media(max-width: @screen-m) {
+	.site-logo--small {
+		transform: scale(.7)
+	}
 }
