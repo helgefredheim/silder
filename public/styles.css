@@ -412,7 +412,7 @@ img {
 }
 @media (min-width: 30em) {
   .parallax--frontpage {
-    background-image: url("images/stumtjener.png");
+    background-image: url("images/stumtjener-desktop.jpg");
   }
   .parallax--frontpage img {
     display: none;
