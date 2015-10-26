@@ -32,11 +32,7 @@ var Product = React.createClass({
 							<div cols="5" className="column">
 								<h1 className="product-title">{this.props.productName}</h1>
 								<p className="product-price">Pris: {this.props.priceDisplay}</p>
-								/* <AddToCartButton {...this.props} /> */
 								<div className="product-information" dangerouslySetInnerHTML={this.getDescription()}></div> 
-								/* <div className="btn-row">  
-									<AddToCartButton {...this.props} />
-								</div> */
 							</div>
 						</div>
 					</section> 

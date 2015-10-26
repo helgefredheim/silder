@@ -26,10 +26,6 @@ var NavigationBar = React.createClass({
 								<h1 className='site-logo column' cols="4">
 									<a href="/">{this.props.title}</a>
 								</h1>
-
-								<p className="column" cols="8">
-									<a href="/shoppingcart">Du har handlet for {this.state.totalPrice} kroner</a>
-								</p>
 							</div>
 						</div>
 					</header>
