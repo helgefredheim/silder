@@ -3,15 +3,18 @@
 	h2 {
 		font-weight: 400; 
 		text-align: center; 
+		font-size: 1.8em; 
+		margin: .5em 0 .2em 0;
 	} 
 
 	h2 a {
-		color: @color-text; 
+		color: lighten(@color-text, 10%);
 		text-decoration: none; 
 	}
 
 	h2 a:hover {
 		text-decoration: underline; 
+		color: @color-text; 
 	}
 
 	.img-container {

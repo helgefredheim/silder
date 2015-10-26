@@ -30,8 +30,10 @@ var Product = React.createClass({
 								<img alt={this.props.imageTitle} src={this.props.imageUrl + "?fit=thumb&w=600&h=600"} />
 							</div> 
 							<div cols="5" className="column">
-								<h1 className="product-title">{this.props.productName}</h1>
-								<p className="product-price">Pris: {this.props.priceDisplay}</p>
+								<div className="product-facts">
+									<h1 className="product-title">{this.props.productName}</h1>
+									<p className="product-price">Pris: {this.props.priceDisplay}</p>
+								</div>
 								<div className="product-information" dangerouslySetInnerHTML={this.getDescription()}></div> 
 							</div>
 						</div>

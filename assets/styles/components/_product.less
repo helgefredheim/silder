@@ -3,18 +3,14 @@
 }
 
 .product-title {
-	font-size: 2em; 
-	font-weight: 200; 
-}
-
-@media(min-width: @screen-m) {
-	.product-title {
-		font-size: 3em;
-	}
+	font-size: 2.5em; 
+	font-weight: 200;
+	margin-bottom: .25em;
+	margin-top: .35em;
 }
 
 .product-price {
-	font-size: 1.25em;
+	font-size: 1.3em;
 	font-weight: 200; 
 } 
 
@@ -22,8 +18,13 @@
 	padding-top: 1.5em;
 }
 
-.product-information {
-	padding-top: 2em;
-	margin-top: 2em; 
-	border-top: 1px solid @color-border;
+.product-facts {
+	margin-bottom: 2.5em; 
+	color: lighten(@color-text, 10%); 
+}
+
+@media(min-width: @screen-m) {
+	.product-facts {
+		font-size: 1.2em;
+	}
 }
