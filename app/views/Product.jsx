@@ -26,13 +26,13 @@ var Product = React.createClass({
 					<NavigationBar title="Silder" />
 					<section className="container section solid">
 						<div className="silder-row around">
-							<div cols="7" className="column">
+							<div cols="6" className="column">
 								<img alt={this.props.imageTitle} src={this.props.imageUrl + "?fit=thumb&w=600&h=600"} />
 							</div> 
-							<div cols="5" className="column">
+							<div cols="6" className="column">
 								<div className="product-facts">
 									<h1 className="product-title">{this.props.productName}</h1>
-									<p className="product-price">Pris: {this.props.priceDisplay}</p>
+									<p className="product-price"><span className="price-unit">kr</span> {this.props.price}</p>
 								</div>
 								<div className="product-information" dangerouslySetInnerHTML={this.getDescription()}></div> 
 							</div>
