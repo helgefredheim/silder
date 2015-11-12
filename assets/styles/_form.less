@@ -4,6 +4,18 @@ fieldset {
 	padding: 0; 
 }
 
+legend {
+	margin-bottom: 1em;
+	text-transform: uppercase;
+	font-size: .8em;
+	letter-spacing: 1px;
+}
+
+input[type="text"], input[type="email"], input[type="search"], input[type="password"] {
+	-webkit-appearance: none;
+	-moz-appearance: none; /* mobile firefox too! */
+}
+
 .input-text {
 	padding: .4em;
 	font-size: 1em;
@@ -11,10 +23,13 @@ fieldset {
 	line-height: 1;
 
 	&:focus {
-		outline: none;
-		border: 1px solid black;
-		box-shadow: 0 0 0 1px @color-text, 0 0 0 3px #fff; 
+		border-color: darken(@color-border, 50%); 
+		.focus;
 	}
+}
+
+.btn:focus {
+	.focus;
 }
 
 input::-webkit-input-placeholder {

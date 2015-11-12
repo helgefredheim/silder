@@ -40,40 +40,28 @@
 }
 
 .btn-arrow {
-	background: #000; 
+
+	@shadow-width: .2em;
+
+	background: #000 data-uri("../graphics/arrow-down.svg") center center  no-repeat; 
+	background-size: 50% 50%;
 	border-radius: 50%; 
 	text-indent: -9999px; 
 	display: inline-block;
-	width: 2em; 
-	height: 2em; 
+	width: 2.2em; 
+	height: 2.2em; 
 	position: relative;
 	transform: translateY(0);
-	transition: transform 100ms ease-in-out; 
+	transition: all 100ms ease-in-out; 
+	box-shadow: 0 0 0 0 transparent;
 
 	&:hover {
-		transform: translateY(5%);
+		transform: translateY(-@shadow-width);
+		box-shadow: 0 @shadow-width 0 0 rgba(255, 255, 255, .3);
 	}
 
-	&:before, &:after {
-		width: 37%; 
-		height: 2px; 
-		display: inline-block;
-		background-color: #fff; 
-		content: "";
-		position: absolute;
-		top: 38%; 
-	}
-
-	&:before {
-		left: 25%; 
-		transform-origin: 0 0; 
-		transform: rotate(45deg);
-	}
-
-	&:after {
-		right: 25%; 
-		transform-origin: 100% 0;
-		transform: rotate(-45deg);
+	&:hover:focus {
+		box-shadow: 0 @shadow-width 0 0 rgba(255, 255, 255, .3), 0 0 0 3px orange;
 	}
 }
 
@@ -94,7 +82,7 @@
 		height: 30px; 
 		width: 100%; 
 		text-indent: -9999px; 
-		background: transparent url("graphics/silder-logo-black.png") no-repeat top left;
+		background: transparent data-uri("../graphics/silder-logo-black.png") no-repeat top left;
 		background-size: 211px 30px; 
 	}
 }
@@ -106,6 +94,6 @@
 
 @media(max-width: @screen-m) {
 	.site-logo--small {
-		transform: scale(.7)
+		transform: scale(.7) 
 	}
 }

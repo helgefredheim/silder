@@ -44,6 +44,21 @@ img {
 	height: auto; 
 }
 
+a {
+	color: @color-link;
+	text-decoration: underline;
+}
+
+a:focus {
+	.focus;
+}
+
+.visually-hidden {
+	position: absolute;
+	left: -999999px;
+	top: -999999px; 
+}
+
 @media(min-width: @screen-m) {
 	.container {
 		padding-left: 1.25em; 

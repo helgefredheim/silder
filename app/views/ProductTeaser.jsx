@@ -9,16 +9,16 @@ var ProductTeaser = React.createClass({
 
 	render: function() {
 		return <article cols="4" className={this.props.className}>
-					<a href={this.getUrl()} className="img-container">
-						<img alt={this.props.imageTitle} src={this.props.imageUrl + "?fit=thumb&w=600&h=600"} />
-					</a>
-					<h2>
-						<a href={this.getUrl()}>
+					<a href={this.getUrl()} title={"Mer informasjon om produktet " + this.props.productName}>
+						<div className="img-container">
+							<img alt={this.props.productName + ". Foto."} src={this.props.imageUrl + "?fit=thumb&w=600&h=600"} />
+						</div>
+					
+						<h2>
 							{this.props.productName}
-						</a>
-					</h2>
-					<p>{this.props.introduction}</p>
-					<a className="btn btn-outline btn-small btn-upper" href={this.getUrl()}>Mer</a>
+						</h2>
+						<p>{this.props.introduction}</p>
+					</a>
 				</article>
 	}
 });

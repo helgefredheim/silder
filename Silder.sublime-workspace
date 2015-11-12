@@ -4,8 +4,24 @@
 		"selected_items":
 		[
 			[
+				"magin",
+				"margin-right"
+			],
+			[
 				"margin",
-				"margin-top"
+				"margin-bottom"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"text-",
+				"text-decoration"
+			],
+			[
+				"list-",
+				"list-style-type"
 			],
 			[
 				"color-bo",
@@ -30,10 +46,6 @@
 			[
 				"inline",
 				"inline-block"
-			],
-			[
-				"text",
-				"text-align"
 			],
 			[
 				"grnt",
@@ -194,10 +206,6 @@
 			[
 				"ma",
 				"max-width"
-			],
-			[
-				"text-",
-				"text-transform"
 			],
 			[
 				"Produ",
@@ -506,98 +514,24 @@
 			[
 				"helge",
 				"helgesenCollection"
-			],
-			[
-				"lakke",
-				"lakkegataCollection"
-			],
-			[
-				"next",
-				"nextDeparture"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "/Users/helgefredheim/Documents/silder/index.js",
+			"file": "/Users/helgefredheim/Documents/silder/assets/styles/_variables.less",
 			"settings":
 			{
-				"buffer_size": 1033,
+				"buffer_size": 584,
 				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/helgefredheim/Documents/silder/dev.sh",
-			"settings":
-			{
-				"buffer_size": 210,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/helgefredheim/Documents/silder/assets/styles/_footer.less",
-			"settings":
-			{
-				"buffer_size": 239,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/helgefredheim/Documents/silder/assets/styles/styles.less",
-			"settings":
-			{
-				"buffer_size": 463,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "Searching 26 files for \".page--product\"\n\n/Users/helgefredheim/Documents/silder/assets/styles/components/_navigation-bar.less:\n    1: .page--product {\n    2  	margin-top: 5em; \n    3  }\n\n/Users/helgefredheim/Documents/silder/assets/styles/components/_product.less:\n    1: .page--product .container {\n    2  	max-width: 55em;\n    3  }\n\n2 matches across 2 files\n\n\nSearching 26 files for \"page--pr\"\n\n/Users/helgefredheim/Documents/silder/assets/styles/components/_navigation-bar.less:\n    1: .page--product {\n    2  	margin-top: 3em; \n    3  }\n    .\n   16  @media(min-width: @screen-m) {\n   17  \n   18: 	.page--product {\n   19  		margin-top: 5em; \n   20  	}\n\n/Users/helgefredheim/Documents/silder/assets/styles/components/_product.less:\n    1: .page--product .container {\n    2  	max-width: 55em;\n    3  }\n\n3 matches across 2 files\n",
-			"settings":
-			{
-				"buffer_size": 828,
-				"line_ending": "Unix",
-				"name": "Find Results",
-				"scratch": true
 			}
 		},
 		{
 			"file": "/Users/helgefredheim/Documents/silder/assets/styles/components/_navigation-bar.less",
 			"settings":
 			{
-				"buffer_size": 220,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/helgefredheim/Documents/silder/assets/styles/components/_site-banner.less",
-			"settings":
-			{
-				"buffer_size": 1766,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/helgefredheim/Documents/silder/app/views/layout.hbs",
-			"settings":
-			{
-				"buffer_size": 523,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/helgefredheim/Documents/silder/.gitignore",
-			"settings":
-			{
-				"buffer_size": 133,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/helgefredheim/Documents/silder/app/views/Frontpage.jsx",
-			"settings":
-			{
-				"buffer_size": 672,
+				"buffer_size": 222,
 				"line_ending": "Unix"
 			}
 		},
@@ -605,63 +539,7 @@
 			"file": "/Users/helgefredheim/Documents/silder/app/views/Product.jsx",
 			"settings":
 			{
-				"buffer_size": 1316,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/helgefredheim/Documents/silder/app/views/ProductTeaser.jsx",
-			"settings":
-			{
-				"buffer_size": 688,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/helgefredheim/Documents/silder/app/views/Footer.jsx",
-			"settings":
-			{
-				"buffer_size": 243,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/helgefredheim/Documents/silder/assets/styles/_variables.less",
-			"settings":
-			{
-				"buffer_size": 541,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/helgefredheim/Documents/silder/app/views/About.jsx",
-			"settings":
-			{
-				"buffer_size": 345,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/helgefredheim/Documents/silder/assets/styles/_typography.less",
-			"settings":
-			{
-				"buffer_size": 838,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/helgefredheim/Documents/silder/assets/styles/components/_product-teaser.less",
-			"settings":
-			{
-				"buffer_size": 620,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/helgefredheim/Documents/silder/assets/styles/_scaffolding.less",
-			"settings":
-			{
-				"buffer_size": 727,
+				"buffer_size": 1342,
 				"line_ending": "Unix"
 			}
 		},
@@ -669,7 +547,71 @@
 			"file": "/Users/helgefredheim/Documents/silder/assets/styles/components/_product.less",
 			"settings":
 			{
-				"buffer_size": 439,
+				"buffer_size": 602,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/helgefredheim/Documents/silder/app/views/layout.hbs",
+			"settings":
+			{
+				"buffer_size": 496,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/helgefredheim/Documents/silder/lib/models/ProductContentModel.js",
+			"settings":
+			{
+				"buffer_size": 728,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/helgefredheim/Documents/silder/assets/styles/components/_product-teaser.less",
+			"settings":
+			{
+				"buffer_size": 677,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/helgefredheim/Documents/silder/app/views/Footer.jsx",
+			"settings":
+			{
+				"buffer_size": 763,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/helgefredheim/Documents/silder/assets/styles/_form.less",
+			"settings":
+			{
+				"buffer_size": 338,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/helgefredheim/Documents/silder/assets/styles/_form.less",
+			"settings":
+			{
+				"buffer_size": 350,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/helgefredheim/Documents/silder/assets/styles/styles.less",
+			"settings":
+			{
+				"buffer_size": 450,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/helgefredheim/Documents/silder/assets/styles/_footer.less",
+			"settings":
+			{
+				"buffer_size": 753,
 				"line_ending": "Unix"
 			}
 		}
@@ -782,12 +724,27 @@
 	},
 	"file_history":
 	[
-		"/Users/helgefredheim/Documents/silder/README.md",
-		"/Users/helgefredheim/Documents/silder/.gitignore",
-		"/Users/helgefredheim/Documents/silder/Procfile",
-		"/Users/helgefredheim/Documents/silder/app/views/Product.jsx",
-		"/Users/helgefredheim/Documents/silder/app/routes.js",
+		"/Users/helgefredheim/Documents/silder/dev.sh",
+		"/Users/helgefredheim/Documents/silder/index.js",
+		"/Users/helgefredheim/Documents/silder/assets/styles/_footer.less",
+		"/Users/helgefredheim/Documents/silder/assets/styles/styles.less",
 		"/Users/helgefredheim/Documents/silder/assets/styles/components/_navigation-bar.less",
+		"/Users/helgefredheim/Documents/silder/assets/styles/components/_site-banner.less",
+		"/Users/helgefredheim/Documents/silder/app/views/layout.hbs",
+		"/Users/helgefredheim/Documents/silder/.gitignore",
+		"/Users/helgefredheim/Documents/silder/app/views/Frontpage.jsx",
+		"/Users/helgefredheim/Documents/silder/app/views/Product.jsx",
+		"/Users/helgefredheim/Documents/silder/app/views/ProductTeaser.jsx",
+		"/Users/helgefredheim/Documents/silder/app/views/Footer.jsx",
+		"/Users/helgefredheim/Documents/silder/assets/styles/_variables.less",
+		"/Users/helgefredheim/Documents/silder/app/views/About.jsx",
+		"/Users/helgefredheim/Documents/silder/assets/styles/_typography.less",
+		"/Users/helgefredheim/Documents/silder/assets/styles/components/_product-teaser.less",
+		"/Users/helgefredheim/Documents/silder/assets/styles/_scaffolding.less",
+		"/Users/helgefredheim/Documents/silder/assets/styles/components/_product.less",
+		"/Users/helgefredheim/Documents/silder/README.md",
+		"/Users/helgefredheim/Documents/silder/Procfile",
+		"/Users/helgefredheim/Documents/silder/app/routes.js",
 		"/Users/helgefredheim/Documents/silder/app/router/index.js",
 		"/Users/helgefredheim/Documents/silder/lib/api.js",
 		"/Users/helgefredheim/Documents/silder/.env",
@@ -795,10 +752,7 @@
 		"/Users/helgefredheim/Documents/silder/package.json",
 		"/Users/helgefredheim/Documents/silder/LICENSE",
 		"/Users/helgefredheim/Documents/silder/app/views/NavigationBar.jsx",
-		"/Users/helgefredheim/Documents/silder/dev.sh",
 		"/Users/helgefredheim/Documents/silder/app/views/Header.jsx",
-		"/Users/helgefredheim/Documents/silder/assets/styles/components/_site-banner.less",
-		"/Users/helgefredheim/Documents/silder/app/views/Frontpage.jsx",
 		"/Users/helgefredheim/Documents/silder/app/views/Products.jsx",
 		"/Users/helgefredheim/Documents/isomorphic-tutorial/app/views/ShoppingCart.jsx",
 		"/Users/helgefredheim/Documents/isomorphic-tutorial/app/routes.js",
@@ -897,19 +851,7 @@
 		"/Users/helgefredheim/Documents/Silder/views/Page.html",
 		"/Users/helgefredheim/Documents/Silder/src/server/views/pages/page.html",
 		"/Users/helgefredheim/Documents/Silder/src/client/less/components/_site-banner.less",
-		"/Users/helgefredheim/Documents/Silder/src/client/less/_typography.less",
-		"/Users/helgefredheim/Documents/Silder/src/client/less/components/site-banner.less",
-		"/Users/helgefredheim/Documents/Silder/src/client/less/components/_product.less",
-		"/Users/helgefredheim/Documents/Silder/src/client/less/_scaffolding.less",
-		"/Users/helgefredheim/Documents/Silder/src/client/less/_variables.less",
-		"/Users/helgefredheim/Documents/Silder/src/client/less/vendor/normalize.less",
-		"/Users/helgefredheim/Documents/Silder/src/client/scripts/Header.jsx",
-		"/Users/helgefredheim/Documents/Silder/src/client/less/_buttons.less",
-		"/Users/helgefredheim/Documents/Silder/src/client/less/vendor/kube/variables.less",
-		"/Users/helgefredheim/Documents/Silder/src/client/less/vendor/kube/typography.less",
-		"/Users/helgefredheim/Documents/Silder/src/client/scripts/About.jsx",
-		"/Users/helgefredheim/Documents/Silder/src/client/scripts/Products.jsx",
-		"/Users/helgefredheim/Documents/Silder/src/client/less/styles.less"
+		"/Users/helgefredheim/Documents/Silder/src/client/less/_typography.less"
 	],
 	"find":
 	{
@@ -917,7 +859,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 93.0,
+		"height": 0.0,
 		"where_history":
 		[
 			"/Users/helgefredheim/Documents/silder/assets/styles",
@@ -993,6 +935,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"2px",
+			"</li>",
+			"<li>",
 			"page--pr",
 			".page--product",
 			"page-header",
@@ -1117,10 +1062,7 @@
 			"pageCollection",
 			"createContentsCollection",
 			"PageModel",
-			"settings",
-			"Application",
-			"this.props.slug",
-			"AppView"
+			"settings"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1143,54 +1085,54 @@
 	"groups":
 	[
 		{
-			"selected": 16,
+			"selected": 7,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/Users/helgefredheim/Documents/silder/index.js",
+					"file": "/Users/helgefredheim/Documents/silder/assets/styles/_variables.less",
 					"settings":
 					{
-						"buffer_size": 1033,
+						"buffer_size": 584,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								488,
-								488
+								530,
+								530
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+							"syntax": "Packages/LESS/LESS.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 36.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "/Users/helgefredheim/Documents/silder/dev.sh",
+					"file": "/Users/helgefredheim/Documents/silder/assets/styles/components/_navigation-bar.less",
 					"settings":
 					{
-						"buffer_size": 210,
+						"buffer_size": 222,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								210,
-								210
+								222,
+								222
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage"
+							"syntax": "Packages/LESS/LESS.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1200,183 +1142,71 @@
 				},
 				{
 					"buffer": 2,
-					"file": "/Users/helgefredheim/Documents/silder/assets/styles/_footer.less",
+					"file": "/Users/helgefredheim/Documents/silder/app/views/Product.jsx",
 					"settings":
 					{
-						"buffer_size": 239,
+						"buffer_size": 1342,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								199,
-								199
+								1097,
+								1097
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/LESS/LESS.tmLanguage"
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.x": 502.0,
+						"translation.y": 429.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "/Users/helgefredheim/Documents/silder/assets/styles/styles.less",
+					"file": "/Users/helgefredheim/Documents/silder/assets/styles/components/_product.less",
 					"settings":
 					{
-						"buffer_size": 463,
+						"buffer_size": 602,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								295,
-								295
+								431,
+								431
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/LESS/LESS.tmLanguage"
+							"syntax": "Packages/LESS/LESS.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 416.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 4,
-					"settings":
-					{
-						"buffer_size": 828,
-						"regions":
-						{
-							"match":
-							{
-								"flags": 112,
-								"regions":
-								[
-									[
-										133,
-										147
-									],
-									[
-										271,
-										285
-									],
-									[
-										489,
-										497
-									],
-									[
-										601,
-										609
-									],
-									[
-										741,
-										749
-									]
-								],
-								"scope": ""
-							}
-						},
-						"selection":
-						[
-							[
-								416,
-								416
-							]
-						],
-						"settings":
-						{
-							"detect_indentation": false,
-							"output_tag": 2,
-							"result_base_dir": "",
-							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
-							"result_line_regex": "^ +([0-9]+):",
-							"scroll_past_end": true,
-							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 304.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "/Users/helgefredheim/Documents/silder/assets/styles/components/_navigation-bar.less",
-					"settings":
-					{
-						"buffer_size": 220,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								220,
-								220
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LESS/LESS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "/Users/helgefredheim/Documents/silder/assets/styles/components/_site-banner.less",
-					"settings":
-					{
-						"buffer_size": 1766,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								324,
-								324
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LESS/LESS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1501.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
 					"file": "/Users/helgefredheim/Documents/silder/app/views/layout.hbs",
 					"settings":
 					{
-						"buffer_size": 523,
+						"buffer_size": 496,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								175,
-								54
+								106,
+								113
 							]
 						],
 						"settings":
@@ -1390,24 +1220,52 @@
 					"type": "text"
 				},
 				{
-					"buffer": 8,
-					"file": "/Users/helgefredheim/Documents/silder/.gitignore",
+					"buffer": 5,
+					"file": "/Users/helgefredheim/Documents/silder/lib/models/ProductContentModel.js",
 					"settings":
 					{
-						"buffer_size": 133,
+						"buffer_size": 728,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								56,
-								56
+								593,
+								593
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 92.0,
+						"translation.y": 131.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/Users/helgefredheim/Documents/silder/assets/styles/components/_product-teaser.less",
+					"settings":
+					{
+						"buffer_size": 677,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								672,
+								672
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LESS/LESS.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1416,126 +1274,98 @@
 					"type": "text"
 				},
 				{
-					"buffer": 9,
-					"file": "/Users/helgefredheim/Documents/silder/app/views/Frontpage.jsx",
+					"buffer": 7,
+					"file": "/Users/helgefredheim/Documents/silder/app/views/Footer.jsx",
 					"settings":
 					{
-						"buffer_size": 672,
+						"buffer_size": 763,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								459,
-								459
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 144.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "/Users/helgefredheim/Documents/silder/app/views/Product.jsx",
-					"settings":
-					{
-						"buffer_size": 1316,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1032,
-								1032
+								590,
+								590
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
-						"translation.x": 179.0,
-						"translation.y": 251.0,
+						"translation.x": 81.0,
+						"translation.y": 23.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 11,
-					"file": "/Users/helgefredheim/Documents/silder/app/views/ProductTeaser.jsx",
+					"buffer": 8,
+					"file": "/Users/helgefredheim/Documents/silder/assets/styles/_form.less",
 					"settings":
 					{
-						"buffer_size": 688,
+						"buffer_size": 338,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								399,
-								399
+								338,
+								338
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/LESS/LESS.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 55.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 12,
-					"file": "/Users/helgefredheim/Documents/silder/app/views/Footer.jsx",
+					"buffer": 9,
+					"file": "/Users/helgefredheim/Documents/silder/assets/styles/_form.less",
 					"settings":
 					{
-						"buffer_size": 243,
+						"buffer_size": 350,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								243,
-								243
+								258,
+								258
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"syntax": "Packages/LESS/LESS.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.x": 33.0,
+						"translation.y": 51.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 13,
-					"file": "/Users/helgefredheim/Documents/silder/assets/styles/_variables.less",
+					"buffer": 10,
+					"file": "/Users/helgefredheim/Documents/silder/assets/styles/styles.less",
 					"settings":
 					{
-						"buffer_size": 541,
+						"buffer_size": 450,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								487,
-								487
+								450,
+								450
 							]
 						],
 						"settings":
@@ -1549,136 +1379,27 @@
 					"type": "text"
 				},
 				{
-					"buffer": 14,
-					"file": "/Users/helgefredheim/Documents/silder/app/views/About.jsx",
+					"buffer": 11,
+					"file": "/Users/helgefredheim/Documents/silder/assets/styles/_footer.less",
 					"settings":
 					{
-						"buffer_size": 345,
+						"buffer_size": 753,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								290,
-								290
+								426,
+								426
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/LESS/LESS.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 15,
-					"file": "/Users/helgefredheim/Documents/silder/assets/styles/_typography.less",
-					"settings":
-					{
-						"buffer_size": 838,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								198,
-								198
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LESS/LESS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 16,
-					"file": "/Users/helgefredheim/Documents/silder/assets/styles/components/_product-teaser.less",
-					"settings":
-					{
-						"buffer_size": 620,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								395,
-								395
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LESS/LESS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 209.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 17,
-					"file": "/Users/helgefredheim/Documents/silder/assets/styles/_scaffolding.less",
-					"settings":
-					{
-						"buffer_size": 727,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								123,
-								123
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LESS/LESS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 18,
-					"file": "/Users/helgefredheim/Documents/silder/assets/styles/components/_product.less",
-					"settings":
-					{
-						"buffer_size": 439,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								148,
-								148
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LESS/LESS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 38.0,
+						"translation.y": 109.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1729,7 +1450,39 @@
 		[
 			[
 				"",
-				"assets/styles/components/_product.less"
+				"/Users/helgefredheim/Documents/silder/assets/styles/_form.less"
+			],
+			[
+				"form",
+				"/Users/helgefredheim/Documents/silder/assets/styles/_form.less"
+			],
+			[
+				"foot",
+				"app/views/Footer.jsx"
+			],
+			[
+				"foo",
+				"app/views/Footer.jsx"
+			],
+			[
+				"form.less",
+				"/Users/helgefredheim/Documents/silder/assets/styles/_form.less"
+			],
+			[
+				"footer.js",
+				"app/views/Footer.jsx"
+			],
+			[
+				"footer",
+				"app/views/Footer.jsx"
+			],
+			[
+				"productte",
+				"assets/styles/components/_product-teaser.less"
+			],
+			[
+				"produc",
+				"app/views/Product.jsx"
 			],
 			[
 				"product.j",
@@ -1738,10 +1491,6 @@
 			[
 				"footer.",
 				"assets/styles/_footer.less"
-			],
-			[
-				"footer",
-				"app/views/Footer.jsx"
 			],
 			[
 				"styles.",
@@ -1844,10 +1593,6 @@
 				"isomorphic-tutorial/lib/models/ProductModel.js"
 			],
 			[
-				"productte",
-				"isomorphic-tutorial/app/views/ProductTeaser.jsx"
-			],
-			[
 				"bell.",
 				"assets/styles/_bell.less"
 			],
@@ -1886,10 +1631,6 @@
 			[
 				"page.",
 				"pages/page.html"
-			],
-			[
-				"produc",
-				"views/Products.jsx"
 			],
 			[
 				"pr",
@@ -2046,10 +1787,6 @@
 			[
 				"buton-r",
 				"content/nav-design/snippets/button-rows.html"
-			],
-			[
-				"form",
-				"content/nav-design/less/modules/_form.less"
 			],
 			[
 				"comb",
@@ -2221,22 +1958,6 @@
 			],
 			[
 				"launch",
-				"content/assets/js/launch.js"
-			],
-			[
-				"main.",
-				"content/assets/js/main.js"
-			],
-			[
-				"header.html",
-				"content/_partials-launch/header.html"
-			],
-			[
-				"em",
-				"femten_modules/collections/employeesCollection.js"
-			],
-			[
-				"launch.js",
 				"content/assets/js/launch.js"
 			]
 		],
