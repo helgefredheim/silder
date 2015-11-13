@@ -9,10 +9,12 @@ var Frontpage = React.createClass({
 
 	render: function() {
 		return <div className='page page--frontpage'>
-					<div id="frontpage-banner" className="parallax parallax--frontpage">
-						<img className="mobile" src="images/stumtjener-low.jpg" />
+					<div className="frontpage-banner-container">
+						<div id="frontpage-banner" className="parallax parallax--frontpage">
+							<img className="mobile" src="images/stumtjener-low.jpg" />
+						</div>
+						<Header title='Silder' />
 					</div>
-					<Header title='Silder' />
 					<Products title="Produkter" products={this.props.products} />
 					<About title="Om Silder" />
 					<Footer />
