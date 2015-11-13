@@ -4,6 +4,30 @@
 		"selected_items":
 		[
 			[
+				"border-co",
+				"border-color"
+			],
+			[
+				"shad",
+				"shadow-width"
+			],
+			[
+				"trans",
+				"transparent"
+			],
+			[
+				"box",
+				"box-shadow"
+			],
+			[
+				"backg",
+				"background-size"
+			],
+			[
+				"produ",
+				"productName"
+			],
+			[
 				"magin",
 				"margin-right"
 			],
@@ -116,10 +140,6 @@
 				"Parallax"
 			],
 			[
-				"produ",
-				"productsCollection"
-			],
-			[
 				"pr",
 				"productsCollection"
 			],
@@ -186,10 +206,6 @@
 			[
 				"pddi",
 				"padding-top"
-			],
-			[
-				"box",
-				"box-sizing"
 			],
 			[
 				"BAC",
@@ -368,10 +384,6 @@
 				"border-radius"
 			],
 			[
-				"backg",
-				"background-color"
-			],
-			[
 				"knapp--fare",
 				"knapp--fare-tekstfarge"
 			],
@@ -502,18 +514,6 @@
 			[
 				"getD",
 				"getDeparturesTo"
-			],
-			[
-				"lakk",
-				"lakkegata"
-			],
-			[
-				"helgese",
-				"helgesenCollection"
-			],
-			[
-				"helge",
-				"helgesenCollection"
 			]
 		]
 	},
@@ -523,7 +523,7 @@
 			"file": "/Users/helgefredheim/Documents/silder/assets/styles/_variables.less",
 			"settings":
 			{
-				"buffer_size": 584,
+				"buffer_size": 664,
 				"line_ending": "Unix"
 			}
 		},
@@ -571,7 +571,7 @@
 			"file": "/Users/helgefredheim/Documents/silder/assets/styles/components/_product-teaser.less",
 			"settings":
 			{
-				"buffer_size": 677,
+				"buffer_size": 608,
 				"line_ending": "Unix"
 			}
 		},
@@ -579,7 +579,7 @@
 			"file": "/Users/helgefredheim/Documents/silder/app/views/Footer.jsx",
 			"settings":
 			{
-				"buffer_size": 763,
+				"buffer_size": 851,
 				"line_ending": "Unix"
 			}
 		},
@@ -587,7 +587,7 @@
 			"file": "/Users/helgefredheim/Documents/silder/assets/styles/_form.less",
 			"settings":
 			{
-				"buffer_size": 338,
+				"buffer_size": 601,
 				"line_ending": "Unix"
 			}
 		},
@@ -611,7 +611,31 @@
 			"file": "/Users/helgefredheim/Documents/silder/assets/styles/_footer.less",
 			"settings":
 			{
-				"buffer_size": 753,
+				"buffer_size": 711,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/helgefredheim/Documents/silder/assets/styles/_scaffolding.less",
+			"settings":
+			{
+				"buffer_size": 885,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/helgefredheim/Documents/silder/assets/styles/vendor/kube/forms.less",
+			"settings":
+			{
+				"buffer_size": 5937,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/helgefredheim/Documents/silder/assets/styles/components/_site-banner.less",
+			"settings":
+			{
+				"buffer_size": 1605,
 				"line_ending": "Unix"
 			}
 		}
@@ -724,6 +748,7 @@
 	},
 	"file_history":
 	[
+		"/Users/helgefredheim/Documents/silder/app/views/ProductTeaser.jsx",
 		"/Users/helgefredheim/Documents/silder/dev.sh",
 		"/Users/helgefredheim/Documents/silder/index.js",
 		"/Users/helgefredheim/Documents/silder/assets/styles/_footer.less",
@@ -734,7 +759,6 @@
 		"/Users/helgefredheim/Documents/silder/.gitignore",
 		"/Users/helgefredheim/Documents/silder/app/views/Frontpage.jsx",
 		"/Users/helgefredheim/Documents/silder/app/views/Product.jsx",
-		"/Users/helgefredheim/Documents/silder/app/views/ProductTeaser.jsx",
 		"/Users/helgefredheim/Documents/silder/app/views/Footer.jsx",
 		"/Users/helgefredheim/Documents/silder/assets/styles/_variables.less",
 		"/Users/helgefredheim/Documents/silder/app/views/About.jsx",
@@ -935,6 +959,16 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"255",
+			".1em",
+			"3em",
+			"2px",
+			"1em",
+			"2em",
+			"5px",
+			"1.5",
+			"legend",
+			"caret",
 			"2px",
 			"</li>",
 			"<li>",
@@ -1052,17 +1086,7 @@
 			"Application",
 			"page.html",
 			"router",
-			"Router",
-			"var",
-			"Client",
-			"client",
-			"src/client/scripts",
-			"settings",
-			"Frontpage",
-			"pageCollection",
-			"createContentsCollection",
-			"PageModel",
-			"settings"
+			"Router"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1085,7 +1109,7 @@
 	"groups":
 	[
 		{
-			"selected": 7,
+			"selected": 14,
 			"sheets":
 			[
 				{
@@ -1093,15 +1117,15 @@
 					"file": "/Users/helgefredheim/Documents/silder/assets/styles/_variables.less",
 					"settings":
 					{
-						"buffer_size": 584,
+						"buffer_size": 664,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								530,
-								530
+								605,
+								605
 							]
 						],
 						"settings":
@@ -1109,7 +1133,7 @@
 							"syntax": "Packages/LESS/LESS.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 36.0,
+						"translation.y": 58.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1161,7 +1185,7 @@
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 502.0,
-						"translation.y": 429.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1188,7 +1212,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 416.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1241,7 +1265,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 92.0,
-						"translation.y": 131.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1251,15 +1275,15 @@
 					"file": "/Users/helgefredheim/Documents/silder/assets/styles/components/_product-teaser.less",
 					"settings":
 					{
-						"buffer_size": 677,
+						"buffer_size": 608,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								672,
-								672
+								157,
+								157
 							]
 						],
 						"settings":
@@ -1278,23 +1302,24 @@
 					"file": "/Users/helgefredheim/Documents/silder/app/views/Footer.jsx",
 					"settings":
 					{
-						"buffer_size": 763,
+						"buffer_size": 851,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								590,
-								590
+								546,
+								546
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
-						"translation.x": 81.0,
-						"translation.y": 23.0,
+						"translation.x": 0.0,
+						"translation.y": 22.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1304,23 +1329,24 @@
 					"file": "/Users/helgefredheim/Documents/silder/assets/styles/_form.less",
 					"settings":
 					{
-						"buffer_size": 338,
+						"buffer_size": 601,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								338,
-								338
+								514,
+								514
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/LESS/LESS.tmLanguage"
+							"syntax": "Packages/LESS/LESS.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
-						"translation.x": 0.0,
-						"translation.y": 55.0,
+						"translation.x": 3.0,
+						"translation.y": 423.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1346,8 +1372,8 @@
 							"syntax": "Packages/LESS/LESS.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
-						"translation.x": 33.0,
-						"translation.y": 51.0,
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1383,23 +1409,105 @@
 					"file": "/Users/helgefredheim/Documents/silder/assets/styles/_footer.less",
 					"settings":
 					{
-						"buffer_size": 753,
+						"buffer_size": 711,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								426,
-								426
+								240,
+								240
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/LESS/LESS.tmLanguage"
+							"syntax": "Packages/LESS/LESS.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 109.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "/Users/helgefredheim/Documents/silder/assets/styles/_scaffolding.less",
+					"settings":
+					{
+						"buffer_size": 885,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								781,
+								781
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LESS/LESS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 609.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "/Users/helgefredheim/Documents/silder/assets/styles/vendor/kube/forms.less",
+					"settings":
+					{
+						"buffer_size": 5937,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LESS/LESS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 9.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "/Users/helgefredheim/Documents/silder/assets/styles/components/_site-banner.less",
+					"settings":
+					{
+						"buffer_size": 1605,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								177,
+								177
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LESS/LESS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1430.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1450,11 +1558,35 @@
 		[
 			[
 				"",
-				"/Users/helgefredheim/Documents/silder/assets/styles/_form.less"
+				"assets/styles/components/_site-banner.less"
+			],
+			[
+				"footer",
+				"assets/styles/_footer.less"
 			],
 			[
 				"form",
-				"/Users/helgefredheim/Documents/silder/assets/styles/_form.less"
+				"assets/styles/_form.less"
+			],
+			[
+				"productte",
+				"assets/styles/components/_product-teaser.less"
+			],
+			[
+				"produ",
+				"app/views/ProductTeaser.jsx"
+			],
+			[
+				"form.less",
+				"assets/styles/_form.less"
+			],
+			[
+				"forms",
+				"assets/styles/vendor/kube/forms.less"
+			],
+			[
+				"sca",
+				"assets/styles/_scaffolding.less"
 			],
 			[
 				"foot",
@@ -1465,20 +1597,8 @@
 				"app/views/Footer.jsx"
 			],
 			[
-				"form.less",
-				"/Users/helgefredheim/Documents/silder/assets/styles/_form.less"
-			],
-			[
 				"footer.js",
 				"app/views/Footer.jsx"
-			],
-			[
-				"footer",
-				"app/views/Footer.jsx"
-			],
-			[
-				"productte",
-				"assets/styles/components/_product-teaser.less"
 			],
 			[
 				"produc",
@@ -1547,10 +1667,6 @@
 			[
 				"cartmo",
 				"lib/models/CartModel.js"
-			],
-			[
-				"produ",
-				"lib/collections/ProductsCollection.js"
 			],
 			[
 				"naviga",
@@ -1671,10 +1787,6 @@
 			[
 				"styl",
 				"src/client/less/styles.less"
-			],
-			[
-				"sca",
-				"src/client/less/_scaffolding.less"
 			],
 			[
 				"kubevar",
@@ -1955,10 +2067,6 @@
 			[
 				"eo",
 				"femten_modules/collections/employeesCollection.js"
-			],
-			[
-				"launch",
-				"content/assets/js/launch.js"
 			]
 		],
 		"width": 0.0

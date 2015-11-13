@@ -57,11 +57,10 @@
 
 	&:hover {
 		transform: translateY(-@shadow-width);
-		box-shadow: 0 @shadow-width 0 0 rgba(255, 255, 255, .3);
 	}
 
-	&:hover:focus {
-		box-shadow: 0 @shadow-width 0 0 rgba(255, 255, 255, .3), 0 0 0 3px orange;
+	&:active {
+		transform: translateY(0);
 	}
 }
 

@@ -466,10 +466,9 @@ a:focus {
 }
 .btn-arrow:hover {
   transform: translateY(-0.2em);
-  box-shadow: 0 0.2em 0 0 rgba(255, 255, 255, 0.3);
 }
-.btn-arrow:hover:focus {
-  box-shadow: 0 0.2em 0 0 rgba(255, 255, 255, 0.3), 0 0 0 3px orange;
+.btn-arrow:active {
+  transform: translateY(0);
 }
 .container--site-logo {
   text-align: center;
@@ -539,12 +538,9 @@ a:focus {
   max-width: 55em;
 }
 .product-title {
-  font-size: 3em;
+  font-size: 2.5em;
   font-weight: 200;
   margin: 0 0 .25em 0;
-}
-.product-information {
-  line-height: 1.5;
 }
 .product-price {
   background-color: #000;
@@ -567,9 +563,45 @@ a:focus {
   color: #3e3739;
   font-size: 1em;
 }
+.product-information {
+  line-height: 1.5;
+  margin-bottom: 2em;
+}
+.share {
+  width: 2.2em;
+  height: 2.2em;
+  display: block;
+  text-indent: -9999px;
+  border-radius: 50%;
+  background: #231f20 no-repeat center center;
+  transition: background-color 100ms ease-in-out;
+}
+.share--facebook {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAA0CAYAAACZ8ljPAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDE0IDc5LjE1Njc5NywgMjAxNC8wOC8yMC0wOTo1MzowMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OEZEQzExRTQ0RTQwMTFFNTgwNkM5ODdFM0IxMzEyOTIiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RjU1OUFCMEE0RDhGMTFFNTgwNkM5ODdFM0IxMzEyOTIiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKE1hY2ludG9zaCkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDoxNDU1MDg2QjRCMUYxMUU1ODA2Qzk4N0UzQjEzMTI5MiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDoxNDU1MDg2QzRCMUYxMUU1ODA2Qzk4N0UzQjEzMTI5MiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pu+tHloAAADwSURBVHjaYvz//z8DPQETA50BpRZKAXEFEO8D4rdA/J8gBgUpGZgPiKcA8a//JAIWMnylBcRbgFiRnCBhIcOyg0AsQm4cMJKQSvmA+AK5PiMn0XRSahkpPlQB4htAzEyvbJFNDctI8eEzIJYkQt0DIH6IVwUReU6dyCy2B4jZCJlHTJDqEBlaNUD8ixpxKE2khTeolWh46F14s43o6mnwWwiqLQ4QUKNApFmgKusPMSXN/9E4HLVw1EL0fNhIQI0DENsT2eb5QVAVERVwA5EVsAAxjejRRDNq4aiFoxaOWjhq4aiFoxaOWjhqIRYAEGAADaZHIOM5vCsAAAAASUVORK5CYII=");
+  background-size: 14px 26px;
+}
+.share--facebook:hover,
+.share--facebook:focus {
+  background-color: #344e86;
+}
+.share--twitter {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAmCAYAAAC/H3lnAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDE0IDc5LjE1Njc5NywgMjAxNC8wOC8yMC0wOTo1MzowMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OEZEQzExRTg0RTQwMTFFNTgwNkM5ODdFM0IxMzEyOTIiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OEZEQzExRTc0RTQwMTFFNTgwNkM5ODdFM0IxMzEyOTIiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKE1hY2ludG9zaCkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDoxNDU1MDg2RjRCMUYxMUU1ODA2Qzk4N0UzQjEzMTI5MiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDoxNDU1MDg3MDRCMUYxMUU1ODA2Qzk4N0UzQjEzMTI5MiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PtegAuAAAALuSURBVHjazJhvaI1RHMfvs11XWi2FNMwwhUYoSzYvWI0XiqS8sBTZwqYkoeSNF8riHSKjqLVWmCyJdlPerJaUPyMvNGoif9ayui2z7uN79Dt19jjPef797nOfX3269znPOed+73l+5/md38+ybTsVk1WAg2AbWAWmg3HwCvSCDvDTMH4e+JISgokSUK5cc2GBE2DcNtsYOKwZvwzcBmf/La5yYzfIgmmMYktBpx3MroDFoJn05EEOzHcKfkgDOhgFX7R57LicU3WHnNKhnR5lFLF1TGI7SUsabJGTV2o63gSZCIKzDGIfgSZ66t/Fdzn5GpcB/dJ3AjKXfI/TrqouUW3o+A3sCih4L7PYXvkykD8gLv54DBKbcqlPwe2MYu+orqn+yDMfgydpE9R4CL7EJPaec/OXKJGky0e0KgVNYBAMgKOgStPvN1N0HAZTQrGlhOYZ4D1YGGLiz6AfvKPv60ELg+Bz4MyUFsej3FqA3R3FTjvdTbrEcrATZEFbKjn232FICs6AHvKZjeB1QgQPORukD5eDUeUPJMWWgI9um+45WJcgsSNgtptLCLuVsNUd0DU6BQ8nSHBW12g5UqRG8Dghvlxt2nSqNYPr4l4Rxb4Ea7V3XM4CIoB8LWLAaHU7p1iGrFmE6kNgP2W5cVmOMuQx3c20pi1DjyQPykKeLaLYZTexbj4s7Dw4VQTfFau7yFifcPGVmZRpxG0nvZIDkw9vBn10Bo7DBunNMGnqZHmUqraDbtqAhbQJUAdeePb0kZ+JUlFfgV3hiN8E12uFVVsNdoCV9JlhWt0bgbKTgOn7LEoMuayH6m++NfjtmKbi3A9Gsd1hKkt+KjjHwBCzz14IW7sTgxooqk0oka0G1INa5kOQOJQfAA9CzwDBC8DdGIKCKMBURC3hqhcbwBNmkXmqQNZy1Zx1rzXhDvvAHjo1hc1274Nr4ANnhDG9hy06Vm6i5HQFqARzlIzkF52sPoG34A14ShWkgthfAQYA+3VfIApfnNIAAAAASUVORK5CYII=");
+  background-size: 22px 19px;
+}
+.share--twitter:hover,
+.share--twitter:focus {
+  background-color: #1689e0;
+}
 @media (min-width: 45em) {
+  .share {
+    width: 2em;
+    height: 2em;
+  }
   .product-title {
     font-size: 3.5em;
+  }
+  .product-information {
+    margin-bottom: 4em;
   }
 }
 .page-header {
@@ -595,11 +627,24 @@ body {
 .form-newsletter {
   padding-bottom: 3em;
 }
-.form-newsletter .input-text {
-  margin-right: .5em;
+.input-newsletter-email {
   margin-bottom: .5em;
-  width: 10em;
-  max-width: 100%;
+  width: 100%;
+  max-width: 15em;
+}
+.pills {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.pills li {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  margin-right: 1em;
+}
+.pills li:last-child {
+  margin-right: 0;
 }
 .pills--footer {
   font-size: .85em;
@@ -611,18 +656,10 @@ body {
 .pills--footer a:hover {
   text-decoration: underline;
 }
-.pills {
-  list-style-type: none;
-  margin: 0;
-}
-.pills li {
-  margin: 0;
-  padding: 0;
-  display: inline-block;
-  margin-right: 1em;
-}
-.pills li:last-child {
-  margin-right: 0;
+@media (min-width: 30em) {
+  .input-newsletter-email {
+    margin-right: .5em;
+  }
 }
 body {
   line-height: 1.3;

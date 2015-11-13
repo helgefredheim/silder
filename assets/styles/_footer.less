@@ -11,16 +11,30 @@ body {
 }
 
 .form-newsletter {
-
 	padding-bottom: 3em;
+}
 
-	.input-text {
-		margin-right: .5em;
-		margin-bottom: .5em;
-		width: 10em;
-		max-width: 100%; 
+.input-newsletter-email {
+	margin-bottom: .5em;
+	width: 100%;
+	max-width: 15em; 
+}
+
+.pills {
+	list-style-type: none;
+	margin: 0;
+	padding: 0; 
+
+	li {
+		margin: 0; 
+		padding: 0;
+		display: inline-block;
+		margin-right: 1em;
 	}
 
+	li:last-child {
+		margin-right: 0;
+	}
 }
 
 .pills--footer {
@@ -36,18 +50,8 @@ body {
 	}
 }
 
-.pills {
-	list-style-type: none;
-	margin: 0;
-
-	li {
-		margin: 0; 
-		padding: 0;
-		display: inline-block;
-		margin-right: 1em;
-	}
-
-	li:last-child {
-		margin-right: 0;
+@media(min-width: @screen-s) {
+	.input-newsletter-email {
+		margin-right: .5em;
 	}
 }

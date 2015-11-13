@@ -3,7 +3,7 @@ var ProductTeaser = require("./ProductTeaser.jsx");
 
 var Products = React.createClass({
 	render: function() {
-		return <section className="section section--fullscreen solid">
+		return <section className="section solid">
 					<div className="container solid">
 						<h2 className="section-title">
 							<span>{this.props.title}</span>

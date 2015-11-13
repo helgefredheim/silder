@@ -32,9 +32,13 @@ var Product = React.createClass({
 							<div cols="6" className="column">
 								<div className="product-facts">
 									<h1 className="product-title">{this.props.productName}</h1>
-									<p className="product-price"><span className="price-unit">kr</span> {this.props.price}</p>
+									<p aria-label={"kroner " + this.props.price} className="product-price"><span className="price-unit">kr</span> {this.props.price}</p>
 								</div>
 								<div className="product-information" dangerouslySetInnerHTML={this.getDescription()}></div> 
+								<ul className="pills pills--share">
+									<li><a href="#" className="share share--facebook">Del på Facebook</a></li>
+									<li><a href="#" className="share share--twitter">Del på Twitter</a></li>
+								</ul>
 							</div>
 						</div>
 					</section> 
