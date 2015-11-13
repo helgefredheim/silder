@@ -420,25 +420,24 @@ a:focus {
 .parallax {
   width: 100%;
   height: 100vh;
+  background-size: cover;
+}
+.parallax--frontpage {
+  background-image: url("images/stumtjener-low.jpg");
 }
 .parallax--frontpage img {
-  height: 100%;
-  width: auto;
+  display: none;
 }
 @media (min-width: 30em) {
   .parallax {
     background-repeat: no-repeat;
     background-position: center 25%;
     background-attachment: fixed;
-    background-size: cover;
     position: fixed;
     transform: translateZ(0);
   }
   .parallax--frontpage {
     background-image: url("images/stumtjener-desktop.jpg");
-  }
-  .parallax--frontpage img {
-    display: none;
   }
 }
 .frontpage-banner-container {
