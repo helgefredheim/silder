@@ -38,6 +38,7 @@ var Product = React.createClass({
 								<ul className="pills pills--share">
 									<li><a href="#" className="share share--facebook">Del på Facebook</a></li>
 									<li><a href="#" className="share share--twitter">Del på Twitter</a></li>
+									<li><a href="#" className="share share--pinterest">Pin på Pinterest</a></li>
 								</ul>
 							</div>
 						</div>

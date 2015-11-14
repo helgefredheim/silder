@@ -8,7 +8,7 @@ var Footer = React.createClass({
 						<form className="form-newsletter">
 							<fieldset>
 								<legend>Abonner på nyhetsbrev</legend>
-								<label for="newsletter-email" className="visually-hidden">E-post-adresse</label>
+								<label htmlFor="newsletter-email" className="visually-hidden">E-post-adresse</label>
 								<input type="email" name="email" id="newsletter-email" autoComplete="off" placeholder="dittnavn@domene.no" className="input-text input-newsletter-email" />
 								<input type="submit" value="Abonner!" className="btn btn-black" />
 							</fieldset>
