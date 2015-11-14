@@ -12,7 +12,7 @@
 	display: none;
 }
 
-@media(min-width: @screen-xs) {
+@media(min-width: @screen-l) { 
 
 	.parallax {
 		background-repeat: no-repeat;
@@ -91,7 +91,7 @@
 	height: 30px; 
 	padding: 0; 
 	display: inline-block;
-	transform: scale(1, 1);
+	transform: scale(.7);
 
 	a {
 		display: block;
@@ -108,8 +108,8 @@
 	padding-bottom: 1em; 
 }
 
-@media(max-width: @screen-m) {
-	.site-logo--small {
-		transform: scale(.7) 
+@media(min-width: @screen-m) {
+	.site-logo {
+		transform: scale(1); 
 	}
 }

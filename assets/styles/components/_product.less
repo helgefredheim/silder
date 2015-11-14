@@ -7,7 +7,7 @@
 }
 
 .product-title {
-	font-size: 2.5em; 
+	font-size: 2.2em; 
 	font-weight: 200;
 	margin: 0 0 .25em 0;
 }
@@ -16,7 +16,7 @@
 	background-color: #000; 
 	color: #fff; 
 	display: inline-block;
-	font-size: 1.25em;
+	font-size: 1em;
 	margin: 0;
 	padding: .15em .5em; 
 	font-weight: 200; 
@@ -70,6 +70,22 @@
 	padding-bottom: 2em;
 }
 
+@media(min-width: @screen-xs) {
+	.product-title {
+		font-size: 2.5em;
+	}
+
+	.product-price {
+		font-size: 1.25em;
+	}
+}
+
+@media(min-width: @screen-s) {
+	.product-title {
+		font-size: 3em;
+	}
+}
+
 @media(min-width: @screen-m) {
 	.product-image, .product-details {
 		display: inline-block;
@@ -87,7 +103,7 @@
 	}
 
 	.product-title {
-		font-size: 3.5em;
+		font-size: 3.2em;
 	}
 
 	.product-information {

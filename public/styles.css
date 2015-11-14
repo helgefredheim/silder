@@ -411,7 +411,7 @@ a:focus {
   left: -999999px;
   top: -999999px;
 }
-@media (min-width: 45em) {
+@media (min-width: 40em) {
   .container {
     padding-left: 1.25em;
     padding-right: 1.25em;
@@ -428,7 +428,7 @@ a:focus {
 .parallax--frontpage img {
   display: none;
 }
-@media (min-width: 30em) {
+@media (min-width: 53.33333333em) {
   .parallax {
     background-repeat: no-repeat;
     background-position: center 25%;
@@ -493,7 +493,7 @@ a:focus {
   height: 30px;
   padding: 0;
   display: inline-block;
-  transform: scale(1, 1);
+  transform: scale(0.7);
 }
 .site-logo a {
   display: block;
@@ -508,9 +508,9 @@ a:focus {
   padding-top: 2em;
   padding-bottom: 1em;
 }
-@media (max-width: 45em) {
-  .site-logo--small {
-    transform: scale(0.7);
+@media (min-width: 40em) {
+  .site-logo {
+    transform: scale(1);
   }
 }
 .product-teaser {
@@ -524,7 +524,7 @@ a:focus {
 }
 .product-teaser h2 {
   font-weight: 400;
-  font-size: 2.3em;
+  font-size: 1.8em;
   margin: .5em 0 .2em 0;
 }
 .product-teaser .img-container {
@@ -547,7 +547,7 @@ a:focus {
 .product-teaser a:hover .img-container:after {
   opacity: 0;
 }
-@media (min-width: 30em) {
+@media (min-width: 40em) {
   .product-teasers {
     margin-left: -0.5em;
     margin-right: -0.5em;
@@ -559,11 +559,8 @@ a:focus {
     padding-left: .5em;
     padding-right: .5em;
   }
-  .product-teaser h2 {
-    font-size: 1.8em;
-  }
 }
-@media (min-width: 45em) {
+@media (min-width: 40em) {
   .product-teasers {
     margin-left: -1em;
     margin-right: -1em;
@@ -580,7 +577,7 @@ a:focus {
   margin-bottom: 1em;
 }
 .product-title {
-  font-size: 2.5em;
+  font-size: 2.2em;
   font-weight: 200;
   margin: 0 0 .25em 0;
 }
@@ -588,7 +585,7 @@ a:focus {
   background-color: #000;
   color: #fff;
   display: inline-block;
-  font-size: 1.25em;
+  font-size: 1em;
   margin: 0;
   padding: .15em .5em;
   font-weight: 200;
@@ -634,7 +631,20 @@ a:focus {
 .product {
   padding-bottom: 2em;
 }
-@media (min-width: 45em) {
+@media (min-width: 16.66666667em) {
+  .product-title {
+    font-size: 2.5em;
+  }
+  .product-price {
+    font-size: 1.25em;
+  }
+}
+@media (min-width: 19.53125em) {
+  .product-title {
+    font-size: 3em;
+  }
+}
+@media (min-width: 40em) {
   .product-image,
   .product-details {
     display: inline-block;
@@ -649,7 +659,7 @@ a:focus {
     padding-left: 1em;
   }
   .product-title {
-    font-size: 3.5em;
+    font-size: 3.2em;
   }
   .product-information {
     margin-bottom: 2em;
@@ -708,7 +718,7 @@ body {
 .pills--footer a:hover {
   text-decoration: underline;
 }
-@media (min-width: 40em) {
+@media (min-width: 19.53125em) {
   .input-newsletter-email {
     margin-right: .5em;
   }
@@ -752,12 +762,12 @@ p {
   padding-right: 1em;
   z-index: 20;
 }
-@media (min-width: 40em) {
+@media (min-width: 19.53125em) {
   .section-title {
     font-size: 1.3em;
   }
 }
-@media (min-width: 45em) {
+@media (min-width: 40em) {
   .section-title {
     font-size: 1.5em;
   }

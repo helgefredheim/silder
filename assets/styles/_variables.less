@@ -23,9 +23,11 @@
 @color-focus: darken(@color-well-background, 20%);
 
 // Media Queries
-@screen-xs: 30em; 
-@screen-s: 40em; 
-@screen-m: 45em; 
+@em-size: 19.2em;
+@screen-xs: (320/@em-size); 
+@screen-s: (375/@em-size); 
+@screen-m: (768/@em-size); 
+@screen-l: (1024/@em-size); 
 
 .focus {
 	outline: none;
