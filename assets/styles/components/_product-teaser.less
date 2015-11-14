@@ -1,5 +1,8 @@
 .product-teaser {
 
+	text-align: center;
+	padding-bottom: 2em;
+
 	a {
 		color: @color-text; 
 		display: block;
@@ -37,8 +40,36 @@
 
 }
 
-@media(min-width: @screen-m) {
+@media(min-width: @screen-xs) {
+
+	.product-teasers {
+		margin-left: -.5em;
+		margin-right: -.5em;
+	}
+
+	.product-teaser {
+		width: 33.333333333333%;
+		display: inline-block;
+		box-sizing: border-box;
+		padding-left: .5em;
+		padding-right: .5em;		
+	}
+
 	.product-teaser h2 {
 		font-size: 1.8em; 
 	}
+
 }
+
+@media(min-width: @screen-m) {
+	.product-teasers {
+		margin-left: -1em;
+		margin-right: -1em;		
+	}
+
+	.product-teaser {
+		padding-left: 1em;
+		padding-right: 1em;
+	}	
+}
+

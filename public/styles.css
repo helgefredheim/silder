@@ -513,6 +513,10 @@ a:focus {
     transform: scale(0.7);
   }
 }
+.product-teaser {
+  text-align: center;
+  padding-bottom: 2em;
+}
 .product-teaser a {
   color: #231f20;
   display: block;
@@ -543,13 +547,37 @@ a:focus {
 .product-teaser a:hover .img-container:after {
   opacity: 0;
 }
-@media (min-width: 45em) {
+@media (min-width: 30em) {
+  .product-teasers {
+    margin-left: -0.5em;
+    margin-right: -0.5em;
+  }
+  .product-teaser {
+    width: 33.333333333333%;
+    display: inline-block;
+    box-sizing: border-box;
+    padding-left: .5em;
+    padding-right: .5em;
+  }
   .product-teaser h2 {
     font-size: 1.8em;
   }
 }
+@media (min-width: 45em) {
+  .product-teasers {
+    margin-left: -1em;
+    margin-right: -1em;
+  }
+  .product-teaser {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}
 .page--product .container {
   max-width: 55em;
+}
+.product-image {
+  margin-bottom: 1em;
 }
 .product-title {
   font-size: 2.5em;
@@ -568,9 +596,6 @@ a:focus {
 .price-unit {
   font-size: .75em;
   text-transform: uppercase;
-}
-.btn-row {
-  padding-top: 1.5em;
 }
 .product-facts {
   margin-bottom: 2em;
@@ -606,16 +631,28 @@ a:focus {
 .share--twitter:focus {
   background-color: #1689e0;
 }
+.product {
+  padding-bottom: 2em;
+}
 @media (min-width: 45em) {
-  .share {
-    width: 2em;
-    height: 2em;
+  .product-image,
+  .product-details {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+    box-sizing: border-box;
+  }
+  .product-image {
+    padding-right: 1em;
+  }
+  .product-details {
+    padding-left: 1em;
   }
   .product-title {
     font-size: 3.5em;
   }
   .product-information {
-    margin-bottom: 4em;
+    margin-bottom: 2em;
   }
 }
 .page-header {
@@ -671,7 +708,7 @@ body {
 .pills--footer a:hover {
   text-decoration: underline;
 }
-@media (min-width: 30em) {
+@media (min-width: 40em) {
   .input-newsletter-email {
     margin-right: .5em;
   }
@@ -715,7 +752,7 @@ p {
   padding-right: 1em;
   z-index: 20;
 }
-@media (min-width: 30em) {
+@media (min-width: 40em) {
   .section-title {
     font-size: 1.3em;
   }
@@ -765,229 +802,6 @@ input::-webkit-input-placeholder {
 }
 label {
   display: block;
-}
-/* =Grid
------------------------------------------------------------------------------*/
-.silder-row {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  -webkit-flex-basis: 100%;
-  -ms-flex-basis: 100%;
-  flex-basis: 100%;
-  margin-bottom: 1.65em;
-}
-@media (max-width: 768px) {
-  .silder-row {
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-}
-.silder-row column,
-.silder-row .column {
-  margin: 0;
-  padding: 0;
-  margin-right: 1.65em;
-}
-.silder-row column:last-child,
-.silder-row .column:last-child {
-  margin-right: 0;
-}
-.silder-row[end],
-.silder-row.end {
-  margin-bottom: 0;
-}
-.silder-row[split] column,
-.silder-row.split column {
-  margin-right: 0;
-}
-.silder-row[centered],
-.silder-row.centered {
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-.silder-row[around],
-.silder-row.around {
-  -webkit-justify-content: space-around;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
-}
-.silder-row[between],
-.silder-row.between {
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-column[cols="1"],
-.column[cols="1"] {
-  width: 8.33333333%;
-}
-column[cols="2"],
-.column[cols="2"] {
-  width: 16.66666667%;
-}
-column[cols="3"],
-.column[cols="3"] {
-  width: 25%;
-}
-column[cols="4"],
-.column[cols="4"] {
-  width: 33.33333333%;
-}
-column[cols="5"],
-.column[cols="5"] {
-  width: 41.66666667%;
-}
-column[cols="6"],
-.column[cols="6"] {
-  width: 50%;
-}
-column[cols="7"],
-.column[cols="7"] {
-  width: 58.33333333%;
-}
-column[cols="8"],
-.column[cols="8"] {
-  width: 66.66666667%;
-}
-column[cols="9"],
-.column[cols="9"] {
-  width: 75%;
-}
-column[cols="10"],
-.column[cols="10"] {
-  width: 83.33333333%;
-}
-column[cols="11"],
-.column[cols="11"] {
-  width: 91.66666667%;
-}
-column[cols="12"],
-.column[cols="12"] {
-  width: 100%;
-}
-column[offset="1"],
-.column[offset="1"] {
-  margin-left: calc(8.41583333%);
-}
-column[offset="2"],
-.column[offset="2"] {
-  margin-left: calc(16.74916667%);
-}
-column[offset="3"],
-.column[offset="3"] {
-  margin-left: calc(25.0825%);
-}
-column[offset="4"],
-.column[offset="4"] {
-  margin-left: calc(33.41583333%);
-}
-column[offset="5"],
-.column[offset="5"] {
-  margin-left: calc(41.74916667%);
-}
-column[offset="6"],
-.column[offset="6"] {
-  margin-left: calc(50.0825%);
-}
-column[offset="7"],
-.column[offset="7"] {
-  margin-left: calc(58.41583333%);
-}
-column[offset="8"],
-.column[offset="8"] {
-  margin-left: calc(66.74916667%);
-}
-column[offset="9"],
-.column[offset="9"] {
-  margin-left: calc(75.0825%);
-}
-column[offset="10"],
-.column[offset="10"] {
-  margin-left: calc(83.41583333%);
-}
-column[offset="11"],
-.column[offset="11"] {
-  margin-left: calc(91.74916667%);
-}
-.width-1 {
-  width: 8.33333333%;
-}
-.width-2 {
-  width: 16.66666667%;
-}
-.width-3 {
-  width: 25%;
-}
-.width-4 {
-  width: 33.33333333%;
-}
-.width-5 {
-  width: 41.66666667%;
-}
-.width-6 {
-  width: 50%;
-}
-.width-7 {
-  width: 58.33333333%;
-}
-.width-8 {
-  width: 66.66666667%;
-}
-.width-9 {
-  width: 75%;
-}
-.width-10 {
-  width: 83.33333333%;
-}
-.width-11 {
-  width: 91.66666667%;
-}
-.width-12 {
-  width: 100%;
-}
-@media (max-width: 768px) {
-  row,
-  .silder-row {
-    margin-bottom: 0;
-  }
-  row [offset],
-  .silder-row [offset] {
-    margin-left: 0;
-  }
-  row column[cols],
-  .silder-row column[cols],
-  row .column,
-  .silder-row .column {
-    margin-right: 0;
-    width: 100%;
-    margin-bottom: 1.65em;
-  }
-  row row column:last-child,
-  .silder-row row column:last-child {
-    margin-bottom: 0;
-  }
-  .width-1,
-  .width-2,
-  .width-3,
-  .width-4,
-  .width-5,
-  .width-6,
-  .width-7,
-  .width-8,
-  .width-9,
-  .width-10,
-  .width-11,
-  .width-12 {
-    width: 100%;
-  }
 }
 /* =Buttons
 -----------------------------------------------------------------------------*/
