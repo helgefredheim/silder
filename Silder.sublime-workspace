@@ -4,6 +4,90 @@
 		"selected_items":
 		[
 			[
+				"transl",
+				"translateY"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"margi",
+				"margin-bottom"
+			],
+			[
+				"produ",
+				"product-image"
+			],
+			[
+				"pad",
+				"padding-left"
+			],
+			[
+				"padding",
+				"padding-right"
+			],
+			[
+				"inlne",
+				"inline-block"
+			],
+			[
+				"produc",
+				"product-image"
+			],
+			[
+				"paddn",
+				"padding-right"
+			],
+			[
+				"padding-",
+				"padding-left"
+			],
+			[
+				"prod",
+				"product-teaser"
+			],
+			[
+				"margin-",
+				"margin-right"
+			],
+			[
+				"margin",
+				"margin-left"
+			],
+			[
+				"box",
+				"box-sizing"
+			],
+			[
+				"paral",
+				"parallax--frontpage"
+			],
+			[
+				"backgrou",
+				"background-position"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"back",
+				"background-size"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"backgr",
+				"background-color"
+			],
+			[
+				"text",
+				"text-indent"
+			],
+			[
 				"border-co",
 				"border-color"
 			],
@@ -16,28 +100,12 @@
 				"transparent"
 			],
 			[
-				"box",
-				"box-shadow"
-			],
-			[
 				"backg",
 				"background-size"
 			],
 			[
-				"produ",
-				"productName"
-			],
-			[
 				"magin",
 				"margin-right"
-			],
-			[
-				"margin",
-				"margin-bottom"
-			],
-			[
-				"text",
-				"text-decoration"
 			],
 			[
 				"text-",
@@ -52,16 +120,8 @@
 				"color-body-background"
 			],
 			[
-				"padding-",
-				"padding-bottom"
-			],
-			[
 				"di",
 				"display"
-			],
-			[
-				"backgr",
-				"background"
 			],
 			[
 				"tex",
@@ -96,19 +156,7 @@
 				"productsCollection"
 			],
 			[
-				"produc",
-				"productsCollection"
-			],
-			[
-				"back",
-				"background-color"
-			],
-			[
 				"prodc",
-				"product-title"
-			],
-			[
-				"prod",
 				"product-title"
 			],
 			[
@@ -120,16 +168,8 @@
 				"background-color"
 			],
 			[
-				"margin-",
-				"margin-bottom"
-			],
-			[
 				"product-",
 				"product-price"
-			],
-			[
-				"font",
-				"font-weight"
 			],
 			[
 				"bell",
@@ -190,14 +230,6 @@
 			[
 				"rect",
 				"react-root"
-			],
-			[
-				"backgrou",
-				"background-color"
-			],
-			[
-				"padding",
-				"padding-btn-base"
 			],
 			[
 				"font-fam",
@@ -482,152 +514,50 @@
 			[
 				"att",
 				"attendeeModel"
-			],
-			[
-				"Empl",
-				"EmployeesCollection"
-			],
-			[
-				"Emp",
-				"EmployeeModel"
-			],
-			[
-				"tet-",
-				"text-decoration"
-			],
-			[
-				"tit",
-				"title-decorated-square"
-			],
-			[
-				"backgron",
-				"backgroundColor"
-			],
-			[
-				"lake",
-				"lakkegataCollection"
-			],
-			[
-				"lak",
-				"lakkegataCollection"
-			],
-			[
-				"getD",
-				"getDeparturesTo"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
+			"file": "/Users/helgefredheim/Documents/silder/public/styles.css",
+			"settings":
+			{
+				"buffer_size": 35859,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/helgefredheim/Documents/silder/app/routes.js",
+			"settings":
+			{
+				"buffer_size": 931,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/helgefredheim/Documents/silder/app/views/ProductTeaser.jsx",
+			"settings":
+			{
+				"buffer_size": 626,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Searching 23 files for \"products\"\n\n/Users/helgefredheim/Documents/silder/app/routes.js:\n    5      console.log('index');\n    6  \n    7:     apiClient.get('/products.json', function(err, res) {\n    8        if (err) return callback(err);\n    9  \n   10:       var products = res.body;\n   11:       callback(null, 'Frontpage', {products: products});\n   12      });\n   13  \n   ..\n   31        if (err) return callback(err);\n   32  \n   33:       var cartProducts = res.body;\n   34  \n   35        callback(null, 'ShoppingCart', {\n   36:         products: cartProducts\n   37        });\n   38      });\n\n/Users/helgefredheim/Documents/silder/app/views/AddToCartButton.jsx:\n    1  var React = require(\"react\");\n    2: var productsCollection = require(\"../../lib/session\").productsCollection;\n    3  var ProductModel = require(\"../../lib/models/ProductModel\");\n    4  \n    .\n    8  		var model = new ProductModel(this.props);\n    9  		model.set(\"key\", \"product-\" + model.cid);\n   10: 		productsCollection.add(model);\n   11  		model.save(); \n   12  	},\n\n/Users/helgefredheim/Documents/silder/app/views/Frontpage.jsx:\n    1  var React = require(\"react\");\n    2  var Header = require(\"./Header.jsx\");\n    3: var Products = require(\"./Products.jsx\");\n    4  var About = require(\"./About.jsx\");\n    5  var Footer = require(\"./Footer.jsx\");\n    .\n   14  						<Header title='Silder' />\n   15  					</div>\n   16: 					<Products title=\"Produkter\" products={this.props.products} />\n   17  					<About title=\"Om Silder\" />\n   18  					<Footer />\n\n/Users/helgefredheim/Documents/silder/app/views/Header.jsx:\n   11  						</div>\n   12  					</header>\n   13: 					<p className=\"frontpage-header-btns\"><a className=\"btn-arrow\" href=\"#products\">To content</a></p>\n   14  				</div>\n   15  	}\n\n/Users/helgefredheim/Documents/silder/app/views/NavigationBar.jsx:\n    1  var React = require(\"react\");\n    2: var productsCollection = require(\"../../lib/session\").productsCollection;\n    3  var isServer = !process.browser;\n    4  \n    .\n    7  	setTotalPrice: function() {\n    8  		if(!isServer && this.isMounted()) {\n    9: 			this.setState({\"totalPrice\": productsCollection.getTotalPrice()}); 				\n   10  		}\n   11  	},\n   12  \n   13  	getInitialState: function() {\n   14: 		productsCollection.on(\"add\", this.setTotalPrice, this);\n   15: 		productsCollection.on(\"remove\", this.setTotalPrice, this);\n   16  		return {\n   17: 			totalPrice: productsCollection.getTotalPrice()\n   18  		};\n   19  	},\n\n/Users/helgefredheim/Documents/silder/app/views/Products.jsx:\n    2  var ProductTeaser = require(\"./ProductTeaser.jsx\");\n    3  \n    4: var Products = React.createClass({\n    5  	render: function() {\n    6  		return <section className=\"section solid\">\n    .\n   12  					<div className=\"container\">\n   13  						<div className=\"product-teasers\">\n   14: 							{this.props.products.map(function (p) {\n   15  								return <ProductTeaser key={p.slug} className=\"product-teaser\" {...p} image=\"lampe.jpg\" />;\n   16  							})}\n   ..\n   21  });\n   22  \n   23: module.exports = Products;\n\n/Users/helgefredheim/Documents/silder/app/views/ShoppingCart.jsx:\n   16  										<tr><th>Name</th><th>Price</th></tr>\n   17  									</thead>\n   18: 									{this.props.products.map(function (p) {\n   19  										return <tr key={p.key}><td>{p.productName}</td><td>{p.price}</td></tr>;\n   20  									})}\n\n26 matches across 7 files\n",
+			"settings":
+			{
+				"buffer_size": 3389,
+				"line_ending": "Unix",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
 			"file": "/Users/helgefredheim/Documents/silder/assets/styles/_variables.less",
 			"settings":
 			{
-				"buffer_size": 664,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/helgefredheim/Documents/silder/assets/styles/components/_navigation-bar.less",
-			"settings":
-			{
-				"buffer_size": 222,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/helgefredheim/Documents/silder/app/views/Product.jsx",
-			"settings":
-			{
-				"buffer_size": 1342,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/helgefredheim/Documents/silder/assets/styles/components/_product.less",
-			"settings":
-			{
-				"buffer_size": 602,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/helgefredheim/Documents/silder/app/views/layout.hbs",
-			"settings":
-			{
-				"buffer_size": 496,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/helgefredheim/Documents/silder/lib/models/ProductContentModel.js",
-			"settings":
-			{
-				"buffer_size": 728,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/helgefredheim/Documents/silder/assets/styles/components/_product-teaser.less",
-			"settings":
-			{
-				"buffer_size": 608,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/helgefredheim/Documents/silder/app/views/Footer.jsx",
-			"settings":
-			{
-				"buffer_size": 851,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/helgefredheim/Documents/silder/assets/styles/_form.less",
-			"settings":
-			{
-				"buffer_size": 601,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/helgefredheim/Documents/silder/assets/styles/_form.less",
-			"settings":
-			{
-				"buffer_size": 350,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/helgefredheim/Documents/silder/assets/styles/styles.less",
-			"settings":
-			{
-				"buffer_size": 450,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/helgefredheim/Documents/silder/assets/styles/_footer.less",
-			"settings":
-			{
-				"buffer_size": 711,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/helgefredheim/Documents/silder/assets/styles/_scaffolding.less",
-			"settings":
-			{
-				"buffer_size": 885,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/helgefredheim/Documents/silder/assets/styles/vendor/kube/forms.less",
-			"settings":
-			{
-				"buffer_size": 5937,
+				"buffer_size": 724,
 				"line_ending": "Unix"
 			}
 		},
@@ -635,7 +565,63 @@
 			"file": "/Users/helgefredheim/Documents/silder/assets/styles/components/_site-banner.less",
 			"settings":
 			{
-				"buffer_size": 1605,
+				"buffer_size": 2060,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/helgefredheim/Documents/silder/app/views/Footer.jsx",
+			"settings":
+			{
+				"buffer_size": 878,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/helgefredheim/Documents/silder/app/views/Product.jsx",
+			"settings":
+			{
+				"buffer_size": 1682,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/helgefredheim/Documents/silder/assets/styles/components/_product.less",
+			"settings":
+			{
+				"buffer_size": 1862,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/helgefredheim/Documents/silder/assets/styles/components/_product-teaser.less",
+			"settings":
+			{
+				"buffer_size": 1042,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/helgefredheim/Documents/silder/assets/styles/_typography.less",
+			"settings":
+			{
+				"buffer_size": 838,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/helgefredheim/Documents/silder/Gruntfile.js",
+			"settings":
+			{
+				"buffer_size": 2468,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/helgefredheim/Documents/silder/assets/styles/styles-unprefixed.css",
+			"settings":
+			{
+				"buffer_size": 40434,
 				"line_ending": "Unix"
 			}
 		}
@@ -748,24 +734,31 @@
 	},
 	"file_history":
 	[
+		"/Users/helgefredheim/Documents/silder/assets/styles/_variables.less",
+		"/Users/helgefredheim/Documents/silder/assets/styles/components/_navigation-bar.less",
+		"/Users/helgefredheim/Documents/silder/app/views/Product.jsx",
+		"/Users/helgefredheim/Documents/silder/assets/styles/components/_product.less",
+		"/Users/helgefredheim/Documents/silder/app/views/layout.hbs",
+		"/Users/helgefredheim/Documents/silder/lib/models/ProductContentModel.js",
+		"/Users/helgefredheim/Documents/silder/assets/styles/components/_product-teaser.less",
+		"/Users/helgefredheim/Documents/silder/app/views/Footer.jsx",
+		"/Users/helgefredheim/Documents/silder/assets/styles/_form.less",
+		"/Users/helgefredheim/Documents/silder/assets/styles/styles.less",
+		"/Users/helgefredheim/Documents/silder/assets/styles/_footer.less",
+		"/Users/helgefredheim/Documents/silder/assets/styles/_scaffolding.less",
+		"/Users/helgefredheim/Documents/silder/assets/styles/vendor/kube/forms.less",
+		"/Users/helgefredheim/Documents/silder/assets/styles/components/_site-banner.less",
+		"/Users/helgefredheim/Documents/silder/app/views/Products.jsx",
+		"/Users/helgefredheim/Documents/silder/app/views/Frontpage.jsx",
+		"/Users/helgefredheim/Documents/silder/assets/styles/vendor/_reflex.less",
+		"/Users/helgefredheim/Documents/silder/app/views/Header.jsx",
 		"/Users/helgefredheim/Documents/silder/app/views/ProductTeaser.jsx",
+		"/Users/helgefredheim/Documents/silder/package.json",
 		"/Users/helgefredheim/Documents/silder/dev.sh",
 		"/Users/helgefredheim/Documents/silder/index.js",
-		"/Users/helgefredheim/Documents/silder/assets/styles/_footer.less",
-		"/Users/helgefredheim/Documents/silder/assets/styles/styles.less",
-		"/Users/helgefredheim/Documents/silder/assets/styles/components/_navigation-bar.less",
-		"/Users/helgefredheim/Documents/silder/assets/styles/components/_site-banner.less",
-		"/Users/helgefredheim/Documents/silder/app/views/layout.hbs",
 		"/Users/helgefredheim/Documents/silder/.gitignore",
-		"/Users/helgefredheim/Documents/silder/app/views/Frontpage.jsx",
-		"/Users/helgefredheim/Documents/silder/app/views/Product.jsx",
-		"/Users/helgefredheim/Documents/silder/app/views/Footer.jsx",
-		"/Users/helgefredheim/Documents/silder/assets/styles/_variables.less",
 		"/Users/helgefredheim/Documents/silder/app/views/About.jsx",
 		"/Users/helgefredheim/Documents/silder/assets/styles/_typography.less",
-		"/Users/helgefredheim/Documents/silder/assets/styles/components/_product-teaser.less",
-		"/Users/helgefredheim/Documents/silder/assets/styles/_scaffolding.less",
-		"/Users/helgefredheim/Documents/silder/assets/styles/components/_product.less",
 		"/Users/helgefredheim/Documents/silder/README.md",
 		"/Users/helgefredheim/Documents/silder/Procfile",
 		"/Users/helgefredheim/Documents/silder/app/routes.js",
@@ -773,11 +766,8 @@
 		"/Users/helgefredheim/Documents/silder/lib/api.js",
 		"/Users/helgefredheim/Documents/silder/.env",
 		"/Users/helgefredheim/Documents/silder/settings.js",
-		"/Users/helgefredheim/Documents/silder/package.json",
 		"/Users/helgefredheim/Documents/silder/LICENSE",
 		"/Users/helgefredheim/Documents/silder/app/views/NavigationBar.jsx",
-		"/Users/helgefredheim/Documents/silder/app/views/Header.jsx",
-		"/Users/helgefredheim/Documents/silder/app/views/Products.jsx",
 		"/Users/helgefredheim/Documents/isomorphic-tutorial/app/views/ShoppingCart.jsx",
 		"/Users/helgefredheim/Documents/isomorphic-tutorial/app/routes.js",
 		"/Users/helgefredheim/Documents/isomorphic-tutorial/app/views/AddToCartButton.jsx",
@@ -871,11 +861,7 @@
 		"/Users/helgefredheim/Documents/Silder/app/api/settings.js",
 		"/Users/helgefredheim/Documents/Silder/views/Application.jsx",
 		"/Users/helgefredheim/Documents/Silder/app/api/lib/contentClient.js",
-		"/Users/helgefredheim/Documents/Silder/app/page.html",
-		"/Users/helgefredheim/Documents/Silder/views/Page.html",
-		"/Users/helgefredheim/Documents/Silder/src/server/views/pages/page.html",
-		"/Users/helgefredheim/Documents/Silder/src/client/less/components/_site-banner.less",
-		"/Users/helgefredheim/Documents/Silder/src/client/less/_typography.less"
+		"/Users/helgefredheim/Documents/Silder/app/page.html"
 	],
 	"find":
 	{
@@ -883,9 +869,10 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 93.0,
 		"where_history":
 		[
+			"/Users/helgefredheim/Documents/silder/app",
 			"/Users/helgefredheim/Documents/silder/assets/styles",
 			"/Users/helgefredheim/Documents/silder/assets",
 			"/Users/helgefredheim/Documents/silder/assets/styles",
@@ -959,6 +946,22 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			".btn-arrow",
+			"newsletter-email",
+			"products",
+			");",
+			": (",
+			"/@em-size",
+			"min-wid",
+			"em/",
+			"em",
+			"2.2",
+			"1em",
+			".5",
+			"1em",
+			"5em",
+			"2em",
+			"facebook",
 			"255",
 			".1em",
 			"3em",
@@ -1070,23 +1073,7 @@
 			"url",
 			"path",
 			"transform",
-			"30deg",
-			"ProductsList",
-			"app",
-			"App",
-			"ProductsList",
-			"productId",
-			"product",
-			"Header",
-			"PageModel",
-			"Application",
-			"Application.jsx",
-			"Application",
-			"Frontpage",
-			"Application",
-			"page.html",
-			"router",
-			"Router"
+			"30deg"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1109,54 +1096,62 @@
 	"groups":
 	[
 		{
-			"selected": 14,
+			"selected": 11,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/Users/helgefredheim/Documents/silder/assets/styles/_variables.less",
+					"file": "/Users/helgefredheim/Documents/silder/public/styles.css",
 					"settings":
 					{
-						"buffer_size": 664,
+						"buffer_size": 35859,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								605,
-								605
+								9512,
+								9512
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/LESS/LESS.tmLanguage"
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 58.0,
+						"translation.y": 5985.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "/Users/helgefredheim/Documents/silder/assets/styles/components/_navigation-bar.less",
+					"file": "/Users/helgefredheim/Documents/silder/app/routes.js",
 					"settings":
 					{
-						"buffer_size": 222,
+						"buffer_size": 931,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								222,
-								222
+								347,
+								355
+							],
+							[
+								449,
+								457
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/LESS/LESS.tmLanguage"
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1166,25 +1161,26 @@
 				},
 				{
 					"buffer": 2,
-					"file": "/Users/helgefredheim/Documents/silder/app/views/Product.jsx",
+					"file": "/Users/helgefredheim/Documents/silder/app/views/ProductTeaser.jsx",
 					"settings":
 					{
-						"buffer_size": 1342,
+						"buffer_size": 626,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1097,
-								1097
+								136,
+								144
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
-						"translation.x": 502.0,
+						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
@@ -1192,24 +1188,140 @@
 				},
 				{
 					"buffer": 3,
-					"file": "/Users/helgefredheim/Documents/silder/assets/styles/components/_product.less",
 					"settings":
 					{
-						"buffer_size": 602,
+						"buffer_size": 3389,
 						"regions":
 						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										156,
+										164
+									],
+									[
+										262,
+										270
+									],
+									[
+										325,
+										333
+									],
+									[
+										335,
+										343
+									],
+									[
+										449,
+										457
+									],
+									[
+										539,
+										547
+									],
+									[
+										553,
+										561
+									],
+									[
+										712,
+										720
+									],
+									[
+										762,
+										770
+									],
+									[
+										975,
+										983
+									],
+									[
+										1198,
+										1206
+									],
+									[
+										1220,
+										1228
+									],
+									[
+										1401,
+										1409
+									],
+									[
+										1428,
+										1436
+									],
+									[
+										1449,
+										1457
+									],
+									[
+										1709,
+										1717
+									],
+									[
+										1882,
+										1890
+									],
+									[
+										1932,
+										1940
+									],
+									[
+										2126,
+										2134
+									],
+									[
+										2246,
+										2254
+									],
+									[
+										2311,
+										2319
+									],
+									[
+										2410,
+										2418
+									],
+									[
+										2609,
+										2617
+									],
+									[
+										2840,
+										2848
+									],
+									[
+										3041,
+										3049
+									],
+									[
+										3225,
+										3233
+									]
+								],
+								"scope": ""
+							}
 						},
 						"selection":
 						[
 							[
-								431,
-								431
+								68,
+								68
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/LESS/LESS.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"detect_indentation": false,
+							"output_tag": 1,
+							"result_base_dir": "",
+							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1219,71 +1331,44 @@
 				},
 				{
 					"buffer": 4,
-					"file": "/Users/helgefredheim/Documents/silder/app/views/layout.hbs",
+					"file": "/Users/helgefredheim/Documents/silder/assets/styles/_variables.less",
 					"settings":
 					{
-						"buffer_size": 496,
+						"buffer_size": 724,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								106,
-								113
+								660,
+								660
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
+							"syntax": "Packages/LESS/LESS.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 62.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 5,
-					"file": "/Users/helgefredheim/Documents/silder/lib/models/ProductContentModel.js",
+					"file": "/Users/helgefredheim/Documents/silder/assets/styles/components/_site-banner.less",
 					"settings":
 					{
-						"buffer_size": 728,
+						"buffer_size": 2060,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								593,
-								593
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 92.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "/Users/helgefredheim/Documents/silder/assets/styles/components/_product-teaser.less",
-					"settings":
-					{
-						"buffer_size": 608,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								157,
-								157
+								286,
+								286
 							]
 						],
 						"settings":
@@ -1292,6 +1377,33 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
+						"translation.y": 156.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/Users/helgefredheim/Documents/silder/app/views/Footer.jsx",
+					"settings":
+					{
+						"buffer_size": 878,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								224,
+								224
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 337.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
@@ -1299,72 +1411,44 @@
 				},
 				{
 					"buffer": 7,
-					"file": "/Users/helgefredheim/Documents/silder/app/views/Footer.jsx",
+					"file": "/Users/helgefredheim/Documents/silder/app/views/Product.jsx",
 					"settings":
 					{
-						"buffer_size": 851,
+						"buffer_size": 1682,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								546,
-								546
+								1552,
+								1552
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
-						"translation.x": 0.0,
-						"translation.y": 22.0,
+						"translation.x": 582.0,
+						"translation.y": 410.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 8,
-					"file": "/Users/helgefredheim/Documents/silder/assets/styles/_form.less",
+					"file": "/Users/helgefredheim/Documents/silder/assets/styles/components/_product.less",
 					"settings":
 					{
-						"buffer_size": 601,
+						"buffer_size": 1862,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								514,
-								514
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LESS/LESS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 3.0,
-						"translation.y": 423.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "/Users/helgefredheim/Documents/silder/assets/styles/_form.less",
-					"settings":
-					{
-						"buffer_size": 350,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								258,
-								258
+								738,
+								738
 							]
 						],
 						"settings":
@@ -1373,30 +1457,58 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1018.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 10,
-					"file": "/Users/helgefredheim/Documents/silder/assets/styles/styles.less",
+					"buffer": 9,
+					"file": "/Users/helgefredheim/Documents/silder/assets/styles/components/_product-teaser.less",
 					"settings":
 					{
-						"buffer_size": 450,
+						"buffer_size": 1042,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								450,
-								450
+								911,
+								911
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/LESS/LESS.tmLanguage"
+							"syntax": "Packages/LESS/LESS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 856.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "/Users/helgefredheim/Documents/silder/assets/styles/_typography.less",
+					"settings":
+					{
+						"buffer_size": 838,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								831,
+								831
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LESS/LESS.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1406,108 +1518,56 @@
 				},
 				{
 					"buffer": 11,
-					"file": "/Users/helgefredheim/Documents/silder/assets/styles/_footer.less",
+					"file": "/Users/helgefredheim/Documents/silder/Gruntfile.js",
 					"settings":
 					{
-						"buffer_size": 711,
+						"buffer_size": 2468,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								240,
-								240
+								1378,
+								1378
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/LESS/LESS.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 665.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 12,
-					"file": "/Users/helgefredheim/Documents/silder/assets/styles/_scaffolding.less",
+					"file": "/Users/helgefredheim/Documents/silder/assets/styles/styles-unprefixed.css",
 					"settings":
 					{
-						"buffer_size": 885,
+						"buffer_size": 40434,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								781,
-								781
+								309,
+								309
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/LESS/LESS.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 609.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 13,
-					"file": "/Users/helgefredheim/Documents/silder/assets/styles/vendor/kube/forms.less",
-					"settings":
-					{
-						"buffer_size": 5937,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LESS/LESS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 9.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 14,
-					"file": "/Users/helgefredheim/Documents/silder/assets/styles/components/_site-banner.less",
-					"settings":
-					{
-						"buffer_size": 1605,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								177,
-								177
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LESS/LESS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1430.0,
+						"translation.y": 41.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1557,11 +1617,107 @@
 		"selected_items":
 		[
 			[
+				"grunt",
+				"Gruntfile.js"
+			],
+			[
 				"",
 				"assets/styles/components/_site-banner.less"
 			],
 			[
+				"site-",
+				"assets/styles/components/_site-banner.less"
+			],
+			[
+				"site",
+				"assets/styles/components/_site-banner.less"
+			],
+			[
+				"typo",
+				"assets/styles/_typography.less"
+			],
+			[
+				"product-te",
+				"assets/styles/components/_product-teaser.less"
+			],
+			[
+				"site-b",
+				"assets/styles/components/_site-banner.less"
+			],
+			[
+				"product.le",
+				"assets/styles/components/_product.less"
+			],
+			[
+				"product",
+				"app/views/Product.jsx"
+			],
+			[
+				"foot",
+				"app/views/Footer.jsx"
+			],
+			[
+				"site-ba",
+				"assets/styles/components/_site-banner.less"
+			],
+			[
+				"variable",
+				"assets/styles/_variables.less"
+			],
+			[
+				"productt",
+				"app/views/ProductTeaser.jsx"
+			],
+			[
+				"teaser",
+				"assets/styles/components/_product-teaser.less"
+			],
+			[
+				"product.les",
+				"assets/styles/components/_product.less"
+			],
+			[
+				"produ",
+				"app/views/Product.jsx"
+			],
+			[
+				"prod",
+				"app/views/Products.jsx"
+			],
+			[
+				"f",
+				"app/views/Frontpage.jsx"
+			],
+			[
 				"footer",
+				"assets/styles/_footer.less"
+			],
+			[
+				"hea",
+				"app/views/Header.jsx"
+			],
+			[
+				"frontpag",
+				"app/views/Frontpage.jsx"
+			],
+			[
+				"foo",
+				"app/views/Footer.jsx"
+			],
+			[
+				"footer.l",
+				"assets/styles/_footer.less"
+			],
+			[
+				"product.",
+				"assets/styles/components/_product.less"
+			],
+			[
+				"produc",
+				"assets/styles/components/_product.less"
+			],
+			[
+				"footer.le",
 				"assets/styles/_footer.less"
 			],
 			[
@@ -1571,10 +1727,6 @@
 			[
 				"productte",
 				"assets/styles/components/_product-teaser.less"
-			],
-			[
-				"produ",
-				"app/views/ProductTeaser.jsx"
 			],
 			[
 				"form.less",
@@ -1589,20 +1741,8 @@
 				"assets/styles/_scaffolding.less"
 			],
 			[
-				"foot",
-				"app/views/Footer.jsx"
-			],
-			[
-				"foo",
-				"app/views/Footer.jsx"
-			],
-			[
 				"footer.js",
 				"app/views/Footer.jsx"
-			],
-			[
-				"produc",
-				"app/views/Product.jsx"
 			],
 			[
 				"product.j",
@@ -1615,14 +1755,6 @@
 			[
 				"styles.",
 				"assets/styles/styles.less"
-			],
-			[
-				"prod",
-				"app/views/Product.jsx"
-			],
-			[
-				"product",
-				"app/views/Product.jsx"
 			],
 			[
 				"front",
@@ -1694,10 +1826,6 @@
 			],
 			[
 				"pro",
-				"assets/styles/components/_product.less"
-			],
-			[
-				"product.les",
 				"assets/styles/components/_product.less"
 			],
 			[
@@ -1795,10 +1923,6 @@
 			[
 				"typ",
 				"src/client/less/vendor/kube/typography.less"
-			],
-			[
-				"site",
-				"src/client/less/components/_site-banner.less"
 			],
 			[
 				"pac",
@@ -1969,10 +2093,6 @@
 				"content/nav-design/snippets/button-rows.html"
 			],
 			[
-				"variable",
-				"content/nav-design/less/_variables.less"
-			],
-			[
 				"knapp",
 				"less/nytt/knapper.less"
 			],
@@ -2007,66 +2127,6 @@
 			[
 				"pra",
 				"content/_partials-launch/practical.html"
-			],
-			[
-				"h",
-				"content/_partials-launch/header.html"
-			],
-			[
-				"header.",
-				"content/assets/less-launch/header.less"
-			],
-			[
-				"he",
-				"content/_partials-launch/header.html"
-			],
-			[
-				"emp",
-				"femten_modules/collections/employeesCollection.js"
-			],
-			[
-				"pack",
-				"package.json"
-			],
-			[
-				"in",
-				"index.js"
-			],
-			[
-				"empl",
-				"femten_modules/collections/employeesCollection.js"
-			],
-			[
-				"lau",
-				"content/assets/js/launch.js"
-			],
-			[
-				"attende",
-				"femten_modules/collections/attendeesCollection.js"
-			],
-			[
-				"heaer",
-				"content/_partials-launch/header.html"
-			],
-			[
-				"header",
-				"content/_partials-launch/header.html"
-			],
-			[
-				"ba",
-				"content/assets/less/base.less"
-			],
-			[
-				"laun",
-				"content/assets/js/launch.js"
-			],
-			[
-				"index.j",
-				"index.js"
-			],
-			[
-				"eo",
-				"femten_modules/collections/employeesCollection.js"
 			]
 		],
 		"width": 0.0

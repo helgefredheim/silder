@@ -39,6 +39,21 @@ module.exports = function (grunt) {
       }
     },
 
+    postcss: {
+      options: {
+        map: false, // inline sourcemaps
+
+        processors: [
+          require('pixrem')(), // add fallbacks for rem units
+          require('autoprefixer')({browsers: 'last 10 versions'}), // add vendor prefixes
+          require('cssnano')() // minify the result
+        ]
+      },
+      dist: {
+        src: 'public/styles.css'
+      }
+    }, 
+
     nodemon: {
       main: {},
       debug: {
@@ -55,7 +70,7 @@ module.exports = function (grunt) {
       },
       styles: {
         files: 'assets/styles/**/*',
-        tasks: ['less:development']
+        tasks: ['less:development', "postcss"]
       },
       lib: {
         files: 'lib/**/*',
@@ -86,7 +101,8 @@ module.exports = function (grunt) {
 
   require('load-grunt-tasks')(grunt);
 
-  grunt.registerTask('compile', ['browserify', 'less:development']);
+  grunt.loadNpmTasks('grunt-postcss');
+  grunt.registerTask('compile', ['browserify', 'less:development', 'postcss']);
   grunt.registerTask('default', ['compile']);
   grunt.registerTask('server', ['compile', 'concurrent']);
   grunt.registerTask('server:debug', ['compile', 'concurrent:debug']);
