@@ -49,11 +49,16 @@
 .share {
 	width: 2.4em; 
 	height: 2.4em;
+	font-size: 1.1em;
 	display: block;
 	text-indent: -9999px;
 	border-radius: 50%;	
 	background: @color-text no-repeat center center;
 	transition: background-color 200ms ease-in-out;
+}
+
+.pills--share li {
+	margin-right: 1.5em;
 }
 
 .share--facebook {
@@ -110,6 +115,10 @@
 	box-shadow: 0 0 0 2px @color-border;
 }
 
+.product-details {
+	margin-bottom: 1.5em;
+}
+
 @media(min-width: @screen-xs) {
 	.product-title {
 		font-size: 2.5em;
@@ -128,7 +137,15 @@
 	.btn-thumbnail {
 		width: 4em;
 		height: 4em;
-	}		
+	}
+
+	.product-details {
+		margin-bottom: 2em;
+	}
+
+	.share {
+		font-size: 1em;
+	}	
 }
 
 @media(min-width: @screen-m) {
@@ -137,6 +154,10 @@
 		width: 50%; 
 		vertical-align: top;
 		box-sizing: border-box;
+	}
+
+	.pills--share li {
+		margin-right: 1em;
 	}
 
 	.product-images {
@@ -158,5 +179,6 @@
 	.btn-thumbnail {
 		width: 4.5em;
 		height: 4.5em;
-	}	
+	}
+
 }

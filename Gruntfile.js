@@ -3,10 +3,18 @@ module.exports = function (grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
+    uglify: {
+      bundle: {
+        files: {
+          'public/scripts.min.js': ['public/scripts.js']
+        }
+      }
+    },    
+
     browserify: {
       main: {
         options: {
-          debug: true,
+          debug: false,
           transform: ['reactify'],
           aliasMappings: [
             {
@@ -101,8 +109,9 @@ module.exports = function (grunt) {
 
   require('load-grunt-tasks')(grunt);
 
+  grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-postcss');
-  grunt.registerTask('compile', ['browserify', 'less:development', 'postcss']);
+  grunt.registerTask('compile', ['browserify', 'uglify', 'less:development', 'postcss']);
   grunt.registerTask('default', ['compile']);
   grunt.registerTask('server', ['compile', 'concurrent']);
   grunt.registerTask('server:debug', ['compile', 'concurrent:debug']);
