@@ -5,6 +5,7 @@ var port = process.env.PORT || 3030;
 var apiPort = process.env.API_PORT || 3031;
 var api = require('./lib/api');
 var middleware = require('./app/router/middleware');
+var compression = require('compression')
 
 /**
  * This initializes our routes.
@@ -13,6 +14,10 @@ var router = require('./app/initialize');
 
 // Allow directly requiring '.jsx' files.
 require('node-jsx').install({extension: '.jsx'});
+
+app.use(compression({
+	level: 9
+}))
 
 app.use(express.static(__dirname + '/public'));
 

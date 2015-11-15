@@ -28,6 +28,7 @@
     "babelify": "^6.3.0",
     "backbone": "^1.2.3",
     "body-parser": "^1.11.0",
+    "compression": "^1.6.0",
     "contentful": "^1.1.5",
     "director": "^1.2.7",
     "express": "^4.11.2",
