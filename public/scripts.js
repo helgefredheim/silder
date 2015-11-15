@@ -166,6 +166,7 @@ Router.prototype.setRoute = function(route) {
 
 },{"./renderer":4,"__browserify_process":41,"director":42,"react":209}],4:[function(require,module,exports){
 var React = require('react');
+var ReactDOM = require("react-dom");
 
 // Expose `window.React` for dev tools.
 window.React = React;
@@ -177,7 +178,7 @@ function RendererClient() {}
 RendererClient.viewsDir = 'app/views';
 
 RendererClient.prototype.render = function(component, req, res) {
-  React.render(component, document.getElementById('view-container'));
+  ReactDOM.render(component, document.getElementById('view-container'));
 };
 
 RendererClient.prototype.handleErr = function(err) {
@@ -185,7 +186,7 @@ RendererClient.prototype.handleErr = function(err) {
   alert(err);
 };
 
-},{"react":209}],5:[function(require,module,exports){
+},{"react":209,"react-dom":46}],5:[function(require,module,exports){
 var apiClient = require('./api_client');
 
 module.exports = function(match) {

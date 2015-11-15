@@ -1,4 +1,5 @@
 var React = require('react');
+var ReactDOMServer = require('react-dom/server');
 
 // Require Handlebars for layout.
 require('handlebars');
@@ -11,7 +12,7 @@ RendererServer.viewsDir = process.cwd() + '/app/views';
 
 RendererServer.prototype.render = function(component, req, res) {
 
-  var html = React.renderToString(component);
+  var html = ReactDOMServer.renderToString(component);
 
   var locals = {
     body: html
