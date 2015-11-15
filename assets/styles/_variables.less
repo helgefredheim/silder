@@ -20,7 +20,7 @@
 @color-footer-background: darken(@color-body-background, 5%);
 @color-border: darken(@color-body-background, 25%);
 @color-header-background: @color-body-background;
-@color-focus: darken(@color-well-background, 20%);
+@color-focus: orange;
 
 // Media Queries
 @em-size: 19.2em;
@@ -31,5 +31,5 @@
 
 .focus {
 	outline: none;
-	box-shadow: 0 0 0 3px orange; 
+	box-shadow: 0 0 0 3px @color-focus; 
 }

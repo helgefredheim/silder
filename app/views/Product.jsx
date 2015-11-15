@@ -3,6 +3,8 @@ var NavigationBar = require("./NavigationBar.jsx");
 var Footer = require("./Footer.jsx");
 var AddToCartButton = require("./AddToCartButton.jsx");
 var marked = require("marked");
+var Tappable = require('react-tappable');
+var ReactSwipe = require('react-swipe')
 
 marked.setOptions({
   renderer: new marked.Renderer(),
@@ -17,17 +19,72 @@ marked.setOptions({
 
 var Product = React.createClass({
 
+	getInitialState: function() {
+		return { 
+			activeImage: 0
+		};
+	},
+
+	setImage: function(e) {
+		e.preventDefault();
+		var index = e.currentTarget.attributes["data-index"].value;
+		index = parseInt(index);
+		this.setState({
+			"activeImage": index
+		});
+	},
+
 	getDescription: function() {
 		return {__html: marked(this.props.description)}
 	},
 
+	onKeyDown: function(e) {
+		if(e.keyCode === 13) {
+			this.setImage(e);
+		}
+	},
+
+	setActiveThumb: function(index) {
+		this.setState({
+			activeImage: index
+		});
+	},
+
 	render: function() {
+
+		var thumbnails;
+
+		if(this.props.images) {
+			thumbnails = this.props.images.map(function (image, index) {
+				return <Tappable 
+							component="img" 
+							className={"btn-thumbnail" + (index === this.state.activeImage ? " btn-thumbnail--active" : "")} 
+							tabIndex="0"
+							alt={image.description} 
+							data-index={index} 
+							onKeyDown={this.onKeyDown} onTap={this.setImage} onClick={this.setImage} 
+							key={"thumbnail-image-" + index} 
+							width="150" height="150"
+							src={image.file.url+ "?fit=thumb&w=150&h=150"} />
+			}.bind(this));
+		}
+
 		return <div className="page page--product solid">
 					<NavigationBar title="Silder" />
-					<section className="container section solid">
+					<section className="container solid">
 						<div className="product">
-							<div className="product-image">
-								<img alt={this.props.imageTitle} src={this.props.imageUrl + "?fit=thumb&w=600&h=600"} />
+							<div className="product-images">
+								<div className="product-image-stage" id="image-stage">
+									<ReactSwipe callback={this.setActiveThumb} slideToIndex={this.state.activeImage} continuous={false}>
+										{this.props.images.map(function (image, index) {
+											return <img key={"stage-image-" + index} alt={image.description} width="600" height="600" src={image.file.url+ "?fit=thumb&w=600&h=600"} />
+												
+										})}
+									</ReactSwipe>
+								</div>
+								<div className="product-thumbnails">
+									{thumbnails}
+								</div>
 							</div> 
 							<div className="product-details">
 								<div className="product-facts">
