@@ -3,7 +3,7 @@ var ProductTeaser = require("./ProductTeaser.jsx");
 
 var Products = React.createClass({
 	render: function() {
-		return <section className="section solid">
+		return <section id={this.props.id} className="section solid">
 					<div className="container solid">
 						<h2 className="section-title">
 							<span>{this.props.title}</span>
@@ -11,8 +11,8 @@ var Products = React.createClass({
 					</div>
 					<div className="container">
 						<div className="product-teasers">
-							{this.props.products.map(function (p) {
-								return <ProductTeaser key={p.slug} className="product-teaser" {...p} image="lampe.jpg" />;
+							{this.props.products.map(function (props) {
+								return <ProductTeaser key={props.slug} className="product-teaser" {...props} />;
 							})}
 						</div>
 					</div>

@@ -10,7 +10,6 @@ var Header = React.createClass({
 							</h1>
 						</div>
 					</header>
-					<p className="frontpage-header-btns"><a className="btn-arrow" href="#products">To content</a></p>
 				</div>
 	}
 });

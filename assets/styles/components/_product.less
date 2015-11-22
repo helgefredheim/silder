@@ -8,6 +8,9 @@
 
 .product-images {
 	margin-bottom: 2em;
+	&:focus {
+		.focus
+	}
 }
 
 .product-image {
@@ -57,10 +60,6 @@
 	transition: background-color 200ms ease-in-out;
 }
 
-.pills--share li {
-	margin-right: 1.5em;
-}
-
 .share--facebook {
 	background-image: data-uri("../graphics/facebook.svg");
 	background-size: 1.3em 1.3em;
@@ -93,7 +92,7 @@
 }
 
 .product-image-stage {
-	margin-bottom: 1em;
+	margin: 0 0 1em 0;
 }
 
 .btn-thumbnail {
@@ -154,10 +153,6 @@
 		width: 50%; 
 		vertical-align: top;
 		box-sizing: border-box;
-	}
-
-	.pills--share li {
-		margin-right: 1em;
 	}
 
 	.product-images {

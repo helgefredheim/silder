@@ -74,7 +74,7 @@ module.exports = function (grunt) {
     watch: {
       app: {
         files: 'app/**/*',
-        tasks: ['browserify']
+        tasks: ['browserify', "uglify"]
       },
       styles: {
         files: 'assets/styles/**/*',

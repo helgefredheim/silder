@@ -2,9 +2,11 @@ var React = require("react");
 var NavigationBar = require("./NavigationBar.jsx");
 var Footer = require("./Footer.jsx");
 var AddToCartButton = require("./AddToCartButton.jsx");
+var ShareOnSocialMedia = require("./ShareOnSocialMedia.jsx");
 var marked = require("marked");
 var Tappable = require('react-tappable');
 var ReactSwipe = require('react-swipe')
+var ReactDOM = require('react-dom');
 
 marked.setOptions({
   renderer: new marked.Renderer(),
@@ -17,7 +19,38 @@ marked.setOptions({
   smartypants: false
 });
 
-var Product = React.createClass({
+var Thumbnails = React.createClass({
+
+	setImage: function(index) {
+		this.props.activeImage = index;
+		this.props.setActiveImage(index);
+	},
+
+	componentDidUpdate: function () {
+		ReactDOM.findDOMNode(this.refs["has-focus"]).focus(); 
+    },
+
+	render: function() {
+		var html = this.props.images.map(function (image, index) {
+			return <Tappable 
+						ref={this.props.activeImage === index ? "has-focus" : ""}
+						tabIndex={this.props.activeImage === index ? "0" : "-1"}
+						component="img" 
+						className={"btn-thumbnail" + (index === this.props.activeImage ? " btn-thumbnail--active" : "")} 
+						alt={image.description} 
+						data-index={index} 
+						onTap={this.setImage.bind(this, index)} onClick={this.setImage.bind(this, index)} 
+						key={"thumbnail-image-" + index} 
+						width="150" height="150"
+						src={image.file.url+ "?fit=thumb&w=150&h=150"} />
+		}.bind(this), this);
+		return <div className="product-thumbnails">{html}</div>
+
+	}
+
+});
+
+var Gallery = React.createClass({
 
 	getInitialState: function() {
 		return { 
@@ -25,26 +58,25 @@ var Product = React.createClass({
 		};
 	},
 
-	setImage: function(e) {
-		e.preventDefault();
-		var index = e.currentTarget.attributes["data-index"].value;
-		index = parseInt(index);
-		this.setState({
-			"activeImage": index
-		});
-	},
+	onGalleryKeyDown: function(e) {
 
-	getDescription: function() {
-		return {__html: marked(this.props.description)}
-	},
-
-	onKeyDown: function(e) {
-		if(e.keyCode === 13) {
-			this.setImage(e);
+		if(e.keyCode === 39) {
+			var newState = this.state.activeImage + 1; 
+			if(newState === this.props.images.length) {
+				newState = this.props.images.length - 1;
+			}
+			this.setState({
+				activeImage: newState
+			});
+		} else if(e.keyCode === 37) {
+			this.setState({
+				activeImage: this.state.activeImage - 1 >= 0 ? this.state.activeImage - 1 : 0
+			});
 		}
+	
 	},
 
-	setActiveThumb: function(index) {
+	setActiveImage: function(index) {
 		this.setState({
 			activeImage: index
 		});
@@ -52,51 +84,48 @@ var Product = React.createClass({
 
 	render: function() {
 
-		var thumbnails;
+		return <div tabIndex="0" className="product-images" onKeyDown={this.onGalleryKeyDown}>
+					<figure className="product-image-stage" id="image-stage" aria-hidden="true">
+						<ReactSwipe callback={this.setActiveImage} slideToIndex={this.state.activeImage} continuous={true}>
+							{this.props.images.map(function (image, index) {
+								return <img key={"stage-image-" + index} alt={image.description} width="401" height="401" src={image.file.url+ "?fit=thumb&w=800&h=800&q=35"} />
+									
+							})} 
+						</ReactSwipe>
+					</figure>
+					
+					<Thumbnails images={this.props.images} activeImage={this.state.activeImage} setActiveImage={this.setActiveImage} />
+					
+				</div> 
+	}
+});
 
-		if(this.props.images) {
-			thumbnails = this.props.images.map(function (image, index) {
-				return <Tappable 
-							component="img" 
-							className={"btn-thumbnail" + (index === this.state.activeImage ? " btn-thumbnail--active" : "")} 
-							tabIndex="0"
-							alt={image.description} 
-							data-index={index} 
-							onKeyDown={this.onKeyDown} onTap={this.setImage} onClick={this.setImage} 
-							key={"thumbnail-image-" + index} 
-							width="150" height="150"
-							src={image.file.url+ "?fit=thumb&w=150&h=150"} />
-			}.bind(this));
-		}
+var Product = React.createClass({
+
+	getDescription: function() {
+		return {__html: marked(this.props.description)}
+	},
+
+	render: function() {
+
+		var thumbnails;
+		var imageWidth = 800;
+		var imageHeight = 800; 
 
 		return <div className="page page--product solid">
 					<NavigationBar title="Silder" />
 					<section className="container solid">
-						<div className="product">
-							<div className="product-images">
-								<div className="product-image-stage" id="image-stage">
-									<ReactSwipe callback={this.setActiveThumb} slideToIndex={this.state.activeImage} continuous={false}>
-										{this.props.images.map(function (image, index) {
-											return <img key={"stage-image-" + index} alt={image.description} width="600" height="600" src={image.file.url+ "?fit=thumb&w=600&h=600"} />
-												
-										})}
-									</ReactSwipe>
-								</div>
-								<div className="product-thumbnails">
-									{thumbnails}
-								</div>
-							</div> 
+						<div className="product"> 
+							<Gallery images={this.props.images} />
 							<div className="product-details">
 								<div className="product-facts">
 									<h1 className="product-title">{this.props.productName}</h1>
-									<p aria-label={"kroner " + this.props.price} className="product-price"><span className="price-unit">kr</span> {this.props.price}</p>
+									<p aria-label={"kroner " + this.props.price} className="product-price">
+										<span className="price-unit">kr</span> {this.props.price}
+									</p>
 								</div>
 								<div className="product-information" dangerouslySetInnerHTML={this.getDescription()}></div> 
-								<ul className="pills pills--share">
-									<li><a href="#" className="share share--facebook">Del på Facebook</a></li>
-									<li><a href="#" className="share share--twitter">Del på Twitter</a></li>
-									<li><a href="#" className="share share--pinterest">Pin på Pinterest</a></li>
-								</ul>
+								<ShareOnSocialMedia title={this.props.productName + " fra Silder"} url={"http://silder.no/products/" + this.props.slug} />
 							</div>
 						</div>
 					</section> 
