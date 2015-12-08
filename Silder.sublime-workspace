@@ -4,6 +4,102 @@
 		"selected_items":
 		[
 			[
+				"Sub",
+				"SubscriberModel"
+			],
+			[
+				"padding-",
+				"padding-bottom"
+			],
+			[
+				"padding",
+				"padding-top"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"s",
+				"section"
+			],
+			[
+				"pint",
+				"pinterestUrl"
+			],
+			[
+				"pr",
+				"productName"
+			],
+			[
+				"tw",
+				"twitterUrl"
+			],
+			[
+				"face",
+				"facebookUrl"
+			],
+			[
+				"new",
+				"newState"
+			],
+			[
+				"active",
+				"activeImage"
+			],
+			[
+				"image",
+				"images"
+			],
+			[
+				"key",
+				"keyCode"
+			],
+			[
+				"a",
+				"activeImage"
+			],
+			[
+				"margin",
+				"margin-right"
+			],
+			[
+				"margin-",
+				"margin-bottom"
+			],
+			[
+				"set",
+				"setActiveThumb"
+			],
+			[
+				"box-",
+				"box-shadow"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"produc",
+				"product-images-strip"
+			],
+			[
+				"on",
+				"onKeyDown"
+			],
+			[
+				"l",
+				"left"
+			],
+			[
+				"im",
+				"images"
+			],
+			[
+				"fron",
+				"frontpage-header-btns"
+			],
+			[
 				"transl",
 				"translateY"
 			],
@@ -24,36 +120,16 @@
 				"padding-left"
 			],
 			[
-				"padding",
-				"padding-right"
-			],
-			[
 				"inlne",
 				"inline-block"
-			],
-			[
-				"produc",
-				"product-image"
 			],
 			[
 				"paddn",
 				"padding-right"
 			],
 			[
-				"padding-",
-				"padding-left"
-			],
-			[
 				"prod",
 				"product-teaser"
-			],
-			[
-				"margin-",
-				"margin-right"
-			],
-			[
-				"margin",
-				"margin-left"
 			],
 			[
 				"box",
@@ -72,20 +148,12 @@
 				"background-color"
 			],
 			[
-				"back",
-				"background-size"
-			],
-			[
 				"border",
 				"border-radius"
 			],
 			[
 				"backgr",
 				"background-color"
-			],
-			[
-				"text",
-				"text-indent"
 			],
 			[
 				"border-co",
@@ -180,10 +248,6 @@
 				"Parallax"
 			],
 			[
-				"pr",
-				"productsCollection"
-			],
-			[
 				"data",
 				"dataApi"
 			],
@@ -266,10 +330,6 @@
 			[
 				"fun",
 				"function"
-			],
-			[
-				"set",
-				"settings"
 			],
 			[
 				"con",
@@ -454,177 +514,11 @@
 			[
 				"$ru",
 				"$routeParams	AngularJS"
-			],
-			[
-				"template",
-				"templateName"
-			],
-			[
-				"$route",
-				"$routeparams"
-			],
-			[
-				"Fe",
-				"FEMTEN"
-			],
-			[
-				"BACK",
-				"background"
-			],
-			[
-				"Em",
-				"Employees"
-			],
-			[
-				"GET",
-				"GET_SESSION_URL"
-			],
-			[
-				"count",
-				"countdown-title"
-			],
-			[
-				"Attende",
-				"AttendeesView"
-			],
-			[
-				"Atte",
-				"AttendeesCollection"
-			],
-			[
-				"attende",
-				"attendee-card"
-			],
-			[
-				"fig",
-				"figcaption"
-			],
-			[
-				"to",
-				"toLowerCase"
-			],
-			[
-				"atte",
-				"attendeeModel"
-			],
-			[
-				"attend",
-				"attendeeModel"
-			],
-			[
-				"att",
-				"attendeeModel"
 			]
 		]
 	},
 	"buffers":
 	[
-		{
-			"file": "/Users/helgefredheim/Documents/silder/public/styles.css",
-			"settings":
-			{
-				"buffer_size": 35859,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/helgefredheim/Documents/silder/app/routes.js",
-			"settings":
-			{
-				"buffer_size": 931,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/helgefredheim/Documents/silder/app/views/ProductTeaser.jsx",
-			"settings":
-			{
-				"buffer_size": 626,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "Searching 23 files for \"products\"\n\n/Users/helgefredheim/Documents/silder/app/routes.js:\n    5      console.log('index');\n    6  \n    7:     apiClient.get('/products.json', function(err, res) {\n    8        if (err) return callback(err);\n    9  \n   10:       var products = res.body;\n   11:       callback(null, 'Frontpage', {products: products});\n   12      });\n   13  \n   ..\n   31        if (err) return callback(err);\n   32  \n   33:       var cartProducts = res.body;\n   34  \n   35        callback(null, 'ShoppingCart', {\n   36:         products: cartProducts\n   37        });\n   38      });\n\n/Users/helgefredheim/Documents/silder/app/views/AddToCartButton.jsx:\n    1  var React = require(\"react\");\n    2: var productsCollection = require(\"../../lib/session\").productsCollection;\n    3  var ProductModel = require(\"../../lib/models/ProductModel\");\n    4  \n    .\n    8  		var model = new ProductModel(this.props);\n    9  		model.set(\"key\", \"product-\" + model.cid);\n   10: 		productsCollection.add(model);\n   11  		model.save(); \n   12  	},\n\n/Users/helgefredheim/Documents/silder/app/views/Frontpage.jsx:\n    1  var React = require(\"react\");\n    2  var Header = require(\"./Header.jsx\");\n    3: var Products = require(\"./Products.jsx\");\n    4  var About = require(\"./About.jsx\");\n    5  var Footer = require(\"./Footer.jsx\");\n    .\n   14  						<Header title='Silder' />\n   15  					</div>\n   16: 					<Products title=\"Produkter\" products={this.props.products} />\n   17  					<About title=\"Om Silder\" />\n   18  					<Footer />\n\n/Users/helgefredheim/Documents/silder/app/views/Header.jsx:\n   11  						</div>\n   12  					</header>\n   13: 					<p className=\"frontpage-header-btns\"><a className=\"btn-arrow\" href=\"#products\">To content</a></p>\n   14  				</div>\n   15  	}\n\n/Users/helgefredheim/Documents/silder/app/views/NavigationBar.jsx:\n    1  var React = require(\"react\");\n    2: var productsCollection = require(\"../../lib/session\").productsCollection;\n    3  var isServer = !process.browser;\n    4  \n    .\n    7  	setTotalPrice: function() {\n    8  		if(!isServer && this.isMounted()) {\n    9: 			this.setState({\"totalPrice\": productsCollection.getTotalPrice()}); 				\n   10  		}\n   11  	},\n   12  \n   13  	getInitialState: function() {\n   14: 		productsCollection.on(\"add\", this.setTotalPrice, this);\n   15: 		productsCollection.on(\"remove\", this.setTotalPrice, this);\n   16  		return {\n   17: 			totalPrice: productsCollection.getTotalPrice()\n   18  		};\n   19  	},\n\n/Users/helgefredheim/Documents/silder/app/views/Products.jsx:\n    2  var ProductTeaser = require(\"./ProductTeaser.jsx\");\n    3  \n    4: var Products = React.createClass({\n    5  	render: function() {\n    6  		return <section className=\"section solid\">\n    .\n   12  					<div className=\"container\">\n   13  						<div className=\"product-teasers\">\n   14: 							{this.props.products.map(function (p) {\n   15  								return <ProductTeaser key={p.slug} className=\"product-teaser\" {...p} image=\"lampe.jpg\" />;\n   16  							})}\n   ..\n   21  });\n   22  \n   23: module.exports = Products;\n\n/Users/helgefredheim/Documents/silder/app/views/ShoppingCart.jsx:\n   16  										<tr><th>Name</th><th>Price</th></tr>\n   17  									</thead>\n   18: 									{this.props.products.map(function (p) {\n   19  										return <tr key={p.key}><td>{p.productName}</td><td>{p.price}</td></tr>;\n   20  									})}\n\n26 matches across 7 files\n",
-			"settings":
-			{
-				"buffer_size": 3389,
-				"line_ending": "Unix",
-				"name": "Find Results",
-				"scratch": true
-			}
-		},
-		{
-			"file": "/Users/helgefredheim/Documents/silder/assets/styles/_variables.less",
-			"settings":
-			{
-				"buffer_size": 724,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/helgefredheim/Documents/silder/assets/styles/components/_site-banner.less",
-			"settings":
-			{
-				"buffer_size": 2060,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/helgefredheim/Documents/silder/app/views/Footer.jsx",
-			"settings":
-			{
-				"buffer_size": 878,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/helgefredheim/Documents/silder/app/views/Product.jsx",
-			"settings":
-			{
-				"buffer_size": 1682,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/helgefredheim/Documents/silder/assets/styles/components/_product.less",
-			"settings":
-			{
-				"buffer_size": 1862,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/helgefredheim/Documents/silder/assets/styles/components/_product-teaser.less",
-			"settings":
-			{
-				"buffer_size": 1042,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/helgefredheim/Documents/silder/assets/styles/_typography.less",
-			"settings":
-			{
-				"buffer_size": 838,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/helgefredheim/Documents/silder/Gruntfile.js",
-			"settings":
-			{
-				"buffer_size": 2468,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/helgefredheim/Documents/silder/assets/styles/styles-unprefixed.css",
-			"settings":
-			{
-				"buffer_size": 40434,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -734,35 +628,47 @@
 	},
 	"file_history":
 	[
-		"/Users/helgefredheim/Documents/silder/assets/styles/_variables.less",
-		"/Users/helgefredheim/Documents/silder/assets/styles/components/_navigation-bar.less",
-		"/Users/helgefredheim/Documents/silder/app/views/Product.jsx",
-		"/Users/helgefredheim/Documents/silder/assets/styles/components/_product.less",
+		"/Users/helgefredheim/Documents/silder/Gruntfile.js",
 		"/Users/helgefredheim/Documents/silder/app/views/layout.hbs",
-		"/Users/helgefredheim/Documents/silder/lib/models/ProductContentModel.js",
-		"/Users/helgefredheim/Documents/silder/assets/styles/components/_product-teaser.less",
+		"/Users/helgefredheim/Documents/silder/app/router/renderer/index.js",
+		"/Users/helgefredheim/Documents/silder/app/router/renderer/client.js",
+		"/Users/helgefredheim/Documents/silder/assets/styles/_typography.less",
+		"/Users/helgefredheim/Documents/silder/index.js",
+		"/Users/helgefredheim/Documents/silder/app/views/Product.jsx",
+		"/Users/helgefredheim/Documents/silder/app/views/ShareOnSocialMedia.jsx",
+		"/Users/helgefredheim/Documents/silder/node_modules/browserify/package.json",
+		"/Users/helgefredheim/Documents/silder/node_modules/grunt-browserify/package.json",
+		"/Users/helgefredheim/Documents/silder/app/views/Products.jsx",
+		"/Users/helgefredheim/Documents/silder/assets/styles/components/_product.less",
+		"/Users/helgefredheim/Documents/silder/assets/styles/components/_site-banner.less",
+		"/Users/helgefredheim/Documents/silder/app/views/Frontpage.jsx",
+		"/Users/helgefredheim/Documents/silder/app/views/Header.jsx",
+		"/Users/helgefredheim/Documents/silder/app/router/index.js",
+		"/Users/helgefredheim/Documents/silder/assets/styles/_scaffolding.less",
+		"/Users/helgefredheim/Documents/silder/assets/styles/_footer.less",
 		"/Users/helgefredheim/Documents/silder/app/views/Footer.jsx",
+		"/Users/helgefredheim/Documents/silder/lib/models/SubscriberModel.js",
+		"/Users/helgefredheim/Documents/silder/node_modules/browserify/test/catch/main.js",
+		"/Users/helgefredheim/Documents/silder/public/styles.css",
+		"/Users/helgefredheim/Documents/silder/app/routes.js",
+		"/Users/helgefredheim/Documents/silder/app/views/ProductTeaser.jsx",
+		"/Users/helgefredheim/Documents/silder/assets/styles/_variables.less",
+		"/Users/helgefredheim/Documents/silder/assets/styles/_pills.less",
+		"/Users/helgefredheim/Documents/silder/assets/styles/components/_product-teaser.less",
+		"/Users/helgefredheim/Documents/silder/assets/styles/styles-unprefixed.css",
+		"/Users/helgefredheim/Documents/silder/lib/models/ProductContentModel.js",
+		"/Users/helgefredheim/Documents/silder/lib/models/ProductModel.js",
+		"/Users/helgefredheim/Documents/silder/assets/styles/components/_navigation-bar.less",
+		"/Users/helgefredheim/Documents/silder/package.json",
 		"/Users/helgefredheim/Documents/silder/assets/styles/_form.less",
 		"/Users/helgefredheim/Documents/silder/assets/styles/styles.less",
-		"/Users/helgefredheim/Documents/silder/assets/styles/_footer.less",
-		"/Users/helgefredheim/Documents/silder/assets/styles/_scaffolding.less",
 		"/Users/helgefredheim/Documents/silder/assets/styles/vendor/kube/forms.less",
-		"/Users/helgefredheim/Documents/silder/assets/styles/components/_site-banner.less",
-		"/Users/helgefredheim/Documents/silder/app/views/Products.jsx",
-		"/Users/helgefredheim/Documents/silder/app/views/Frontpage.jsx",
 		"/Users/helgefredheim/Documents/silder/assets/styles/vendor/_reflex.less",
-		"/Users/helgefredheim/Documents/silder/app/views/Header.jsx",
-		"/Users/helgefredheim/Documents/silder/app/views/ProductTeaser.jsx",
-		"/Users/helgefredheim/Documents/silder/package.json",
 		"/Users/helgefredheim/Documents/silder/dev.sh",
-		"/Users/helgefredheim/Documents/silder/index.js",
 		"/Users/helgefredheim/Documents/silder/.gitignore",
 		"/Users/helgefredheim/Documents/silder/app/views/About.jsx",
-		"/Users/helgefredheim/Documents/silder/assets/styles/_typography.less",
 		"/Users/helgefredheim/Documents/silder/README.md",
 		"/Users/helgefredheim/Documents/silder/Procfile",
-		"/Users/helgefredheim/Documents/silder/app/routes.js",
-		"/Users/helgefredheim/Documents/silder/app/router/index.js",
 		"/Users/helgefredheim/Documents/silder/lib/api.js",
 		"/Users/helgefredheim/Documents/silder/.env",
 		"/Users/helgefredheim/Documents/silder/settings.js",
@@ -849,19 +755,7 @@
 		"/Users/helgefredheim/Documents/Silder/src/client/scripts/Application.jsx",
 		"/Users/helgefredheim/Documents/Silder/src/client/scripts/ProductTeaser.jsx",
 		"/Users/helgefredheim/Documents/Silder/src/server.jsx",
-		"/Users/helgefredheim/Documents/Silder/src/server/app.jsx",
-		"/Users/helgefredheim/Documents/Silder/src/routes.jsx",
-		"/Users/helgefredheim/Documents/Silder/src/server/app.js",
-		"/Users/helgefredheim/Documents/Silder/app/server.js",
-		"/Users/helgefredheim/Documents/Silder/server.js",
-		"/Users/helgefredheim/Documents/Silder/src/server/collections/ContentTypesCollection.js",
-		"/Users/helgefredheim/Documents/Silder/src/server/collections/ContentsCollection.js",
-		"/Users/helgefredheim/Documents/Silder/src/server/models/PageModel.js",
-		"/Users/helgefredheim/Documents/Silder/src/client/scripts/Product.jsx",
-		"/Users/helgefredheim/Documents/Silder/app/api/settings.js",
-		"/Users/helgefredheim/Documents/Silder/views/Application.jsx",
-		"/Users/helgefredheim/Documents/Silder/app/api/lib/contentClient.js",
-		"/Users/helgefredheim/Documents/Silder/app/page.html"
+		"/Users/helgefredheim/Documents/Silder/src/server/app.jsx"
 	],
 	"find":
 	{
@@ -869,7 +763,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 93.0,
+		"height": 0.0,
 		"where_history":
 		[
 			"/Users/helgefredheim/Documents/silder/app",
@@ -946,6 +840,52 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"style=\"{displayNone}",
+			"{{display:none}}",
+			"style",
+			"styele",
+			"style",
+			"class=",
+			"share",
+			"<a ",
+			"ShareOnSocialMedia",
+			"AddToCartButton",
+			"details",
+			"product-images",
+			"hasFocus",
+			"activeImage",
+			"setActiveImage",
+			"setActiveThumb",
+			"setImage",
+			"tappable",
+			"onGalleryKeyDown",
+			"setActiveThumb",
+			"activeImage",
+			"onKeyDown",
+			"props",
+			"802",
+			"600",
+			"browserify",
+			"renderToString",
+			"React.render",
+			"loadNpmTasks",
+			"browserify",
+			"reactify",
+			"browserify",
+			"2.6",
+			"625em",
+			"1.1875em",
+			"-hover.png",
+			"26px",
+			"margin",
+			"stage",
+			"small",
+			"page-he",
+			"thumbnails",
+			"3.90625",
+			"7.8125",
+			"7,",
+			"setImage",
 			".btn-arrow",
 			"newsletter-email",
 			"products",
@@ -1027,53 +967,7 @@
 			"reload:",
 			"reload: true, ",
 			"viewsDir",
-			"app/views",
-			"div",
-			"ol=\"6\" ",
-			"outline",
-			"this.get(\"fields\")",
-			".rotate",
-			"dingDong",
-			".bjelle",
-			"bjelle-container",
-			"wiggle",
-			"20% 40%",
-			".transform",
-			"deg)",
-			"transform(rotate(",
-			"deg); }",
-			"); }",
-			"transform: ",
-			"NAME-YOUR-ANIMATION 5s",
-			"NAME-YOUR-ANIMATION",
-			"45px",
-			".bell",
-			"bell",
-			"scrollMagic",
-			"isServer",
-			"stylus",
-			"reactif",
-			"router",
-			"productsCollection",
-			"col.products",
-			"productsCollection",
-			"urlParams",
-			"fetchData",
-			"productsCollection",
-			"PageModel",
-			"productsCollection",
-			"settings",
-			"uire(\"",
-			"./app/api/",
-			"settings",
-			"AppView",
-			"dataApi",
-			"stumtjener",
-			"views node index.js",
-			"url",
-			"path",
-			"transform",
-			"30deg"
+			"app/views"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1096,482 +990,8 @@
 	"groups":
 	[
 		{
-			"selected": 11,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "/Users/helgefredheim/Documents/silder/public/styles.css",
-					"settings":
-					{
-						"buffer_size": 35859,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								9512,
-								9512
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 5985.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/Users/helgefredheim/Documents/silder/app/routes.js",
-					"settings":
-					{
-						"buffer_size": 931,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								347,
-								355
-							],
-							[
-								449,
-								457
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "/Users/helgefredheim/Documents/silder/app/views/ProductTeaser.jsx",
-					"settings":
-					{
-						"buffer_size": 626,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								136,
-								144
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"settings":
-					{
-						"buffer_size": 3389,
-						"regions":
-						{
-							"match":
-							{
-								"flags": 112,
-								"regions":
-								[
-									[
-										156,
-										164
-									],
-									[
-										262,
-										270
-									],
-									[
-										325,
-										333
-									],
-									[
-										335,
-										343
-									],
-									[
-										449,
-										457
-									],
-									[
-										539,
-										547
-									],
-									[
-										553,
-										561
-									],
-									[
-										712,
-										720
-									],
-									[
-										762,
-										770
-									],
-									[
-										975,
-										983
-									],
-									[
-										1198,
-										1206
-									],
-									[
-										1220,
-										1228
-									],
-									[
-										1401,
-										1409
-									],
-									[
-										1428,
-										1436
-									],
-									[
-										1449,
-										1457
-									],
-									[
-										1709,
-										1717
-									],
-									[
-										1882,
-										1890
-									],
-									[
-										1932,
-										1940
-									],
-									[
-										2126,
-										2134
-									],
-									[
-										2246,
-										2254
-									],
-									[
-										2311,
-										2319
-									],
-									[
-										2410,
-										2418
-									],
-									[
-										2609,
-										2617
-									],
-									[
-										2840,
-										2848
-									],
-									[
-										3041,
-										3049
-									],
-									[
-										3225,
-										3233
-									]
-								],
-								"scope": ""
-							}
-						},
-						"selection":
-						[
-							[
-								68,
-								68
-							]
-						],
-						"settings":
-						{
-							"detect_indentation": false,
-							"output_tag": 1,
-							"result_base_dir": "",
-							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
-							"result_line_regex": "^ +([0-9]+):",
-							"scroll_past_end": true,
-							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "/Users/helgefredheim/Documents/silder/assets/styles/_variables.less",
-					"settings":
-					{
-						"buffer_size": 724,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								660,
-								660
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LESS/LESS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 62.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "/Users/helgefredheim/Documents/silder/assets/styles/components/_site-banner.less",
-					"settings":
-					{
-						"buffer_size": 2060,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								286,
-								286
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LESS/LESS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 156.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "/Users/helgefredheim/Documents/silder/app/views/Footer.jsx",
-					"settings":
-					{
-						"buffer_size": 878,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								224,
-								224
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 337.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "/Users/helgefredheim/Documents/silder/app/views/Product.jsx",
-					"settings":
-					{
-						"buffer_size": 1682,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1552,
-								1552
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 582.0,
-						"translation.y": 410.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "/Users/helgefredheim/Documents/silder/assets/styles/components/_product.less",
-					"settings":
-					{
-						"buffer_size": 1862,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								738,
-								738
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LESS/LESS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1018.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "/Users/helgefredheim/Documents/silder/assets/styles/components/_product-teaser.less",
-					"settings":
-					{
-						"buffer_size": 1042,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								911,
-								911
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LESS/LESS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 856.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "/Users/helgefredheim/Documents/silder/assets/styles/_typography.less",
-					"settings":
-					{
-						"buffer_size": 838,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								831,
-								831
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LESS/LESS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "/Users/helgefredheim/Documents/silder/Gruntfile.js",
-					"settings":
-					{
-						"buffer_size": 2468,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1378,
-								1378
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 665.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 12,
-					"file": "/Users/helgefredheim/Documents/silder/assets/styles/styles-unprefixed.css",
-					"settings":
-					{
-						"buffer_size": 40434,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								309,
-								309
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 41.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -1617,19 +1037,47 @@
 		"selected_items":
 		[
 			[
-				"grunt",
-				"Gruntfile.js"
+				"",
+				"lib/models/SubscriberModel.js"
 			],
 			[
-				"",
-				"assets/styles/components/_site-banner.less"
+				"main",
+				"node_modules/browserify/test/catch/main.js"
+			],
+			[
+				"footer",
+				"app/views/Footer.jsx"
+			],
+			[
+				"product",
+				"app/views/Products.jsx"
+			],
+			[
+				"frontpage",
+				"app/views/Frontpage.jsx"
+			],
+			[
+				"p",
+				"app/views/Products.jsx"
+			],
+			[
+				"prod",
+				"app/views/Product.jsx"
+			],
+			[
+				"produ",
+				"app/views/Product.jsx"
+			],
+			[
+				"frontpa",
+				"app/views/Frontpage.jsx"
+			],
+			[
+				"product.le",
+				"assets/styles/components/_product.less"
 			],
 			[
 				"site-",
-				"assets/styles/components/_site-banner.less"
-			],
-			[
-				"site",
 				"assets/styles/components/_site-banner.less"
 			],
 			[
@@ -1637,27 +1085,67 @@
 				"assets/styles/_typography.less"
 			],
 			[
-				"product-te",
-				"assets/styles/components/_product-teaser.less"
+				"foo",
+				"app/views/Footer.jsx"
 			],
 			[
-				"site-b",
-				"assets/styles/components/_site-banner.less"
-			],
-			[
-				"product.le",
-				"assets/styles/components/_product.less"
-			],
-			[
-				"product",
+				"produc",
 				"app/views/Product.jsx"
+			],
+			[
+				"site-ban",
+				"assets/styles/components/_site-banner.less"
 			],
 			[
 				"foot",
 				"app/views/Footer.jsx"
 			],
 			[
+				"product-te",
+				"assets/styles/components/_product-teaser.less"
+			],
+			[
+				"form",
+				"assets/styles/_form.less"
+			],
+			[
+				"productcon",
+				"lib/models/ProductContentModel.js"
+			],
+			[
+				"product.less",
+				"assets/styles/components/_product.less"
+			],
+			[
+				"product.js",
+				"app/views/Product.jsx"
+			],
+			[
 				"site-ba",
+				"assets/styles/components/_site-banner.less"
+			],
+			[
+				"scaff",
+				"assets/styles/_scaffolding.less"
+			],
+			[
+				"productmo",
+				"lib/models/ProductModel.js"
+			],
+			[
+				"grunt",
+				"Gruntfile.js"
+			],
+			[
+				"grun",
+				"Gruntfile.js"
+			],
+			[
+				"site",
+				"assets/styles/components/_site-banner.less"
+			],
+			[
+				"site-b",
 				"assets/styles/components/_site-banner.less"
 			],
 			[
@@ -1677,20 +1165,8 @@
 				"assets/styles/components/_product.less"
 			],
 			[
-				"produ",
-				"app/views/Product.jsx"
-			],
-			[
-				"prod",
-				"app/views/Products.jsx"
-			],
-			[
 				"f",
 				"app/views/Frontpage.jsx"
-			],
-			[
-				"footer",
-				"assets/styles/_footer.less"
 			],
 			[
 				"hea",
@@ -1701,10 +1177,6 @@
 				"app/views/Frontpage.jsx"
 			],
 			[
-				"foo",
-				"app/views/Footer.jsx"
-			],
-			[
 				"footer.l",
 				"assets/styles/_footer.less"
 			],
@@ -1713,16 +1185,8 @@
 				"assets/styles/components/_product.less"
 			],
 			[
-				"produc",
-				"assets/styles/components/_product.less"
-			],
-			[
 				"footer.le",
 				"assets/styles/_footer.less"
-			],
-			[
-				"form",
-				"assets/styles/_form.less"
 			],
 			[
 				"productte",
@@ -1813,14 +1277,6 @@
 				"assets/styles/styles.less"
 			],
 			[
-				"scaff",
-				"assets/styles/_scaffolding.less"
-			],
-			[
-				"frontpage",
-				"app/views/Frontpage.jsx"
-			],
-			[
 				"buto",
 				"assets/styles/vendor/kube/buttons.less"
 			],
@@ -1883,10 +1339,6 @@
 			[
 				"pagemo",
 				"app/api/models/PageModel.js"
-			],
-			[
-				"main",
-				"_public/main.js"
 			],
 			[
 				"contentscol",
@@ -2095,38 +1547,6 @@
 			[
 				"knapp",
 				"less/nytt/knapper.less"
-			],
-			[
-				"knapper",
-				"less/nytt/knapper.less"
-			],
-			[
-				"knap.ht",
-				"ssi-server/mal/knapp.html"
-			],
-			[
-				"navdes",
-				"pacbot/content/assets/js/nav-design.js"
-			],
-			[
-				"prog",
-				"content/assets/js/program.js"
-			],
-			[
-				"events",
-				"content/assets/js/data/events.js"
-			],
-			[
-				"base",
-				"content/assets/less-launch/base.less"
-			],
-			[
-				"sche",
-				"content/assets/less-launch/schedule.less"
-			],
-			[
-				"pra",
-				"content/_partials-launch/practical.html"
 			]
 		],
 		"width": 0.0

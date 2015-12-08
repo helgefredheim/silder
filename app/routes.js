@@ -38,4 +38,15 @@ module.exports = function(match) {
     });
   });  
 
+  match('/skjema', function(callback) {
+    console.log('skjema');
+
+    apiClient.get('/skjema.json', function(err, res) {
+      if (err) return callback(err);
+
+      callback(null, 'Form');
+    });
+
+  });
+
 };
