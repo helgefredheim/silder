@@ -240,25 +240,23 @@ module.exports = function(match) {
 
 };
 
-},{"./api_client":1}],"app/views/About.jsx":[function(require,module,exports){
-module.exports=require('q8FNnQ');
-},{}],"q8FNnQ":[function(require,module,exports){
+},{"./api_client":1}],"q8FNnQ":[function(require,module,exports){
 var React = require("react");
 
 var About = React.createClass({displayName: "About",
 	render: function() {
 		return 	React.createElement("div", {className: "section section--fullscreen highlighted"}, 
 					React.createElement("div", {className: "container well highlighted"}, 
-						React.createElement("h2", {className: "section-title"}, 
-							React.createElement("span", null, this.props.title)
-						)
+						React.createElement("p", null, "Tekst...")
 					)
 				)
 	}
 });
 
 module.exports = About;
-},{"react":212}],"HdTUOt":[function(require,module,exports){
+},{"react":212}],"app/views/About.jsx":[function(require,module,exports){
+module.exports=require('q8FNnQ');
+},{}],"HdTUOt":[function(require,module,exports){
 var React = require("react");
 var productsCollection = require("../../lib/session").productsCollection;
 var ProductModel = require("../../lib/models/ProductModel");
@@ -312,14 +310,7 @@ var Footer = React.createClass({displayName: "Footer",
 	render: function() {
 		return 	React.createElement("footer", {className: "section footer"}, 
 					React.createElement("div", {className: "container"}, 
-
-						React.createElement(NewsletterForm, null), 
-
-						React.createElement("ul", {className: "pills pills--footer"}, 
-							React.createElement("li", null, React.createElement("a", {href: "#"}, "Betingelser")), 
-							React.createElement("li", null, React.createElement("a", {href: "#"}, "Om Silder")), 
-							React.createElement("li", null, React.createElement("a", {href: "#"}, "Kontakt"))
-						)
+						React.createElement("p", null, "SILDER ™")
 					)
 				)
 	}
@@ -527,9 +518,7 @@ var Form = React.createClass({displayName: "Form",
 });
 
 module.exports = Form;
-},{"react":212,"react-dom":49}],"app/views/Frontpage.jsx":[function(require,module,exports){
-module.exports=require('e1koj+');
-},{}],"e1koj+":[function(require,module,exports){
+},{"react":212,"react-dom":49}],"e1koj+":[function(require,module,exports){
 var process=require("__browserify_process");var React = require("react");
 var Header = require("./Header.jsx");
 var Products = require("./Products.jsx");
@@ -552,7 +541,7 @@ var Frontpage = React.createClass({displayName: "Frontpage",
 						React.createElement(Header, {title: "Silder", scrollToProducts: this.scrollToProducts})
 					), 
 					React.createElement(Products, {id: "products", title: "Produkter", products: this.props.products}), 
-					React.createElement(About, {title: "Om Silder"}), 
+					React.createElement(About, null), 
 					React.createElement("section", {className: "section section--share"}, 
 						React.createElement("div", {className: "container"}, 
 							React.createElement(ShareOnSocialMedia, {title: "Silder", url: "http://silder.no"})
@@ -565,7 +554,9 @@ var Frontpage = React.createClass({displayName: "Frontpage",
 });
 
 module.exports = Frontpage; 
-},{"./About.jsx":"q8FNnQ","./Footer.jsx":"xAVqhQ","./Header.jsx":"vnUyWA","./Products.jsx":"XfHhOZ","./ShareOnSocialMedia.jsx":"kljIqk","__browserify_process":44,"react":212}],"vnUyWA":[function(require,module,exports){
+},{"./About.jsx":"q8FNnQ","./Footer.jsx":"xAVqhQ","./Header.jsx":"vnUyWA","./Products.jsx":"XfHhOZ","./ShareOnSocialMedia.jsx":"kljIqk","__browserify_process":44,"react":212}],"app/views/Frontpage.jsx":[function(require,module,exports){
+module.exports=require('e1koj+');
+},{}],"vnUyWA":[function(require,module,exports){
 var React = require("react");
 
 var Header = React.createClass({displayName: "Header",
@@ -862,11 +853,6 @@ var ProductTeaser = require("./ProductTeaser.jsx");
 var Products = React.createClass({displayName: "Products",
 	render: function() {
 		return React.createElement("section", {id: this.props.id, className: "section solid"}, 
-					React.createElement("div", {className: "container solid"}, 
-						React.createElement("h2", {className: "section-title"}, 
-							React.createElement("span", null, this.props.title)
-						)
-					), 
 					React.createElement("div", {className: "container"}, 
 						React.createElement("div", {className: "product-teasers"}, 
 							this.props.products.map(function (props) {

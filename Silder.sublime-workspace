@@ -4,6 +4,94 @@
 		"selected_items":
 		[
 			[
+				"epost",
+				"epostError"
+			],
+			[
+				"validate",
+				"validateEpost"
+			],
+			[
+				"valid",
+				"validateTelefon"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"fou",
+				"focus"
+			],
+			[
+				"change",
+				"changeHandler"
+			],
+			[
+				"error",
+				"errorKey"
+			],
+			[
+				"valida",
+				"validateFornavn"
+			],
+			[
+				"valdat",
+				"validateEpost"
+			],
+			[
+				"valdate",
+				"validateFornavn"
+			],
+			[
+				"error-me",
+				"error-message-epost"
+			],
+			[
+				"error-",
+				"error-message-fornavn"
+			],
+			[
+				"telefon",
+				"telefonError"
+			],
+			[
+				"fornavn",
+				"fornavnError"
+			],
+			[
+				"Reat",
+				"ReactDOM"
+			],
+			[
+				"react",
+				"reactref"
+			],
+			[
+				"Eror",
+				"ErrorLink"
+			],
+			[
+				"Error",
+				"ErrorList"
+			],
+			[
+				"er",
+				"error"
+			],
+			[
+				"req",
+				"required"
+			],
+			[
+				"validateF",
+				"validateFormField"
+			],
+			[
+				"text",
+				"text-indent"
+			],
+			[
 				"Sub",
 				"SubscriberModel"
 			],
@@ -14,10 +102,6 @@
 			[
 				"padding",
 				"padding-top"
-			],
-			[
-				"text",
-				"text-align"
 			],
 			[
 				"s",
@@ -58,10 +142,6 @@
 			[
 				"a",
 				"activeImage"
-			],
-			[
-				"margin",
-				"margin-right"
 			],
 			[
 				"margin-",
@@ -376,10 +456,6 @@
 				"groupedEventsForTimeSlot"
 			],
 			[
-				"req",
-				"require"
-			],
-			[
 				"emp",
 				"empClient"
 			],
@@ -438,94 +514,88 @@
 			[
 				"svg",
 				"svgspritesheet"
-			],
-			[
-				"sv",
-				"svgConfig"
-			],
-			[
-				"src",
-				"srcRoot"
-			],
-			[
-				"sr",
-				"srcRoot"
-			],
-			[
-				"border-",
-				"border-bottom"
-			],
-			[
-				"background",
-				"background-color"
-			],
-			[
-				"btn-pr",
-				"btn--primary-active-color"
-			],
-			[
-				"FONT",
-				"font-weight"
-			],
-			[
-				"fon",
-				"font-weight"
-			],
-			[
-				"border-r",
-				"border-radius"
-			],
-			[
-				"knapp--fare",
-				"knapp--fare-tekstfarge"
-			],
-			[
-				"knapp--bak",
-				"knapp--inaktiv-bakgrunnsfarge"
-			],
-			[
-				"knapp--f",
-				"knapp--fare-skyggefarge"
-			],
-			[
-				"knapp--fare-",
-				"knapp--fare-skyggefarge"
-			],
-			[
-				"knapp--hoved",
-				"knapp--hoved-inaktiv-bakgrunnsfarge"
-			],
-			[
-				"knapp-hoved",
-				"knapp-hoved-tekstfarge"
-			],
-			[
-				"knapp-hov",
-				"knapp-hoved-skyggefarge"
-			],
-			[
-				"font-famil",
-				"font-family-modus"
-			],
-			[
-				"snipp",
-				"snippetsBaseUrl"
-			],
-			[
-				"$ru",
-				"$routeParams	AngularJS"
 			]
 		]
 	},
 	"buffers":
 	[
+		{
+			"file": "/Users/helgefredheim/Documents/silder/app/views/Footer.jsx",
+			"settings":
+			{
+				"buffer_size": 1263,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/helgefredheim/Documents/silder/assets/styles/styles.less",
+			"settings":
+			{
+				"buffer_size": 442,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/helgefredheim/Documents/silder/app/routes.js",
+			"settings":
+			{
+				"buffer_size": 1138,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/helgefredheim/Documents/silder/assets/styles/_variables.less",
+			"settings":
+			{
+				"buffer_size": 701,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/helgefredheim/Documents/silder/.gitignore",
+			"settings":
+			{
+				"buffer_size": 143,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/helgefredheim/Documents/silder/app/views/Frontpage.jsx",
+			"settings":
+			{
+				"buffer_size": 1094,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Searching 24 files for \"CONTENTFUL_ACCESS_TOKEN\"\n\n0 matches across 0 files\n\n\nSearching 10 files for \"CONTENTFUL_ACCESS_TOKEN\"\n\n/Users/helgefredheim/Documents/silder/lib/contentClient.js:\n    3  \n    4  var client = contentful.createClient({\n    5:   accessToken: settings.CONTENTFUL_ACCESS_TOKEN,\n    6    space: settings.CONTENTFUL_SPACE\n    7  });\n\n1 match in 1 file\n",
+			"settings":
+			{
+				"buffer_size": 369,
+				"line_ending": "Unix",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "/Users/helgefredheim/Documents/silder/app/views/Form.jsx",
+			"settings":
+			{
+				"buffer_size": 5233,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 392.0,
+		"height": 187.0,
 		"selected_items":
 		[
+			[
+				"synt ht",
+				"Set Syntax: HTML"
+			],
 			[
 				"pack",
 				"Package Control: Remove Package"
@@ -628,6 +698,10 @@
 	},
 	"file_history":
 	[
+		"/Users/helgefredheim/Documents/silder/assets/styles/vendor/kube/variables.less",
+		"/Users/helgefredheim/Documents/silder/app/views/About.jsx",
+		"/Users/helgefredheim/Documents/silder/app/router/index.js",
+		"/Users/helgefredheim/Documents/silder/assets/styles/_variables.less",
 		"/Users/helgefredheim/Documents/silder/Gruntfile.js",
 		"/Users/helgefredheim/Documents/silder/app/views/layout.hbs",
 		"/Users/helgefredheim/Documents/silder/app/router/renderer/index.js",
@@ -643,7 +717,6 @@
 		"/Users/helgefredheim/Documents/silder/assets/styles/components/_site-banner.less",
 		"/Users/helgefredheim/Documents/silder/app/views/Frontpage.jsx",
 		"/Users/helgefredheim/Documents/silder/app/views/Header.jsx",
-		"/Users/helgefredheim/Documents/silder/app/router/index.js",
 		"/Users/helgefredheim/Documents/silder/assets/styles/_scaffolding.less",
 		"/Users/helgefredheim/Documents/silder/assets/styles/_footer.less",
 		"/Users/helgefredheim/Documents/silder/app/views/Footer.jsx",
@@ -652,7 +725,6 @@
 		"/Users/helgefredheim/Documents/silder/public/styles.css",
 		"/Users/helgefredheim/Documents/silder/app/routes.js",
 		"/Users/helgefredheim/Documents/silder/app/views/ProductTeaser.jsx",
-		"/Users/helgefredheim/Documents/silder/assets/styles/_variables.less",
 		"/Users/helgefredheim/Documents/silder/assets/styles/_pills.less",
 		"/Users/helgefredheim/Documents/silder/assets/styles/components/_product-teaser.less",
 		"/Users/helgefredheim/Documents/silder/assets/styles/styles-unprefixed.css",
@@ -666,7 +738,6 @@
 		"/Users/helgefredheim/Documents/silder/assets/styles/vendor/_reflex.less",
 		"/Users/helgefredheim/Documents/silder/dev.sh",
 		"/Users/helgefredheim/Documents/silder/.gitignore",
-		"/Users/helgefredheim/Documents/silder/app/views/About.jsx",
 		"/Users/helgefredheim/Documents/silder/README.md",
 		"/Users/helgefredheim/Documents/silder/Procfile",
 		"/Users/helgefredheim/Documents/silder/lib/api.js",
@@ -754,8 +825,7 @@
 		"/Users/helgefredheim/Documents/Silder/src/client/scripts/Frontpage.jsx",
 		"/Users/helgefredheim/Documents/Silder/src/client/scripts/Application.jsx",
 		"/Users/helgefredheim/Documents/Silder/src/client/scripts/ProductTeaser.jsx",
-		"/Users/helgefredheim/Documents/Silder/src/server.jsx",
-		"/Users/helgefredheim/Documents/Silder/src/server/app.jsx"
+		"/Users/helgefredheim/Documents/Silder/src/server.jsx"
 	],
 	"find":
 	{
@@ -766,6 +836,12 @@
 		"height": 0.0,
 		"where_history":
 		[
+			"/Users/helgefredheim/Documents/silder/lib",
+			"/Users/helgefredheim/Documents/silder/app",
+			"/Users/helgefredheim/Documents/silder",
+			"/Users/helgefredheim/Documents/silder/app/router/renderer",
+			"/Users/helgefredheim/Documents/silder/app/views",
+			"/Users/helgefredheim/Documents/silder/app/router",
 			"/Users/helgefredheim/Documents/silder/app",
 			"/Users/helgefredheim/Documents/silder/assets/styles",
 			"/Users/helgefredheim/Documents/silder/assets",
@@ -840,6 +916,44 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"CONTENTFUL_ACCESS_TOKEN",
+			"facebook",
+			"errorlist",
+			"About",
+			"err",
+			"e",
+			"hasFocus",
+			"telefon",
+			"inlinw",
+			"\" onBlu",
+			"list-error-m",
+			"errorKey",
+			"ref",
+			"ErrorLink",
+			"fieldref",
+			"fornavn",
+			"list-error-message-epost",
+			"passThru",
+			"click",
+			"ErrorLink",
+			"ErrorList",
+			"setState",
+			"ErrorList",
+			"ErrorListTitle",
+			" aria-required=\"true\" ",
+			"aria-live=\"polite\"",
+			"t\" required",
+			"\" type=\"text\"",
+			"<span ref=",
+			"validateFormField",
+			"onBlue",
+			"xt\" type=\"text\"",
+			"name",
+			"js-phone",
+			"js-name",
+			"div",
+			"3em",
+			"span",
 			"style=\"{displayNone}",
 			"{{display:none}}",
 			"style",
@@ -929,45 +1043,7 @@
 			"getCartModel",
 			"CartsCollection",
 			"cartsColl",
-			"cartsCollection",
-			"CartsCollection",
-			"cartsCollection",
-			"req.session.cartModelId",
-			"ProductModel",
-			"req.session.cartModel.productsCollection",
-			"req.session.cartModel.productsCollection.toJSON()",
-			"productsCollection",
-			"req.session.cartModel",
-			"locals",
-			"console",
-			"module.exports",
-			"data",
-			"routeHandler",
-			"app.use",
-			"req",
-			"isServer",
-			"products.json",
-			"Footer",
-			"this.props",
-			"props",
-			"CartModel",
-			"ProductModel",
-			"ProductContentModel",
-			"ProductModel",
-			"Footer",
-			"save",
-			"        options: {\n          livereload: true\n        }",
-			"silder-order",
-			"rt()}",
-			"<button ",
-			"col=\"3\"",
-			"<p>",
-			"interrupt: true,",
-			"viewsDir",
-			"reload:",
-			"reload: true, ",
-			"viewsDir",
-			"app/views"
+			"cartsCollection"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -992,6 +1068,236 @@
 		{
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "/Users/helgefredheim/Documents/silder/app/views/Footer.jsx",
+					"settings":
+					{
+						"buffer_size": 1263,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								276,
+								234
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 16.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Users/helgefredheim/Documents/silder/assets/styles/styles.less",
+					"settings":
+					{
+						"buffer_size": 442,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								357,
+								357
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LESS/LESS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/Users/helgefredheim/Documents/silder/app/routes.js",
+					"settings":
+					{
+						"buffer_size": 1138,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								900,
+								900
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/Users/helgefredheim/Documents/silder/assets/styles/_variables.less",
+					"settings":
+					{
+						"buffer_size": 701,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LESS/LESS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 121.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/Users/helgefredheim/Documents/silder/.gitignore",
+					"settings":
+					{
+						"buffer_size": 143,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								104,
+								104
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/Users/helgefredheim/Documents/silder/app/views/Frontpage.jsx",
+					"settings":
+					{
+						"buffer_size": 1094,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								867,
+								867
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"settings":
+					{
+						"buffer_size": 369,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										272,
+										295
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								77,
+								77
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"output_tag": 2,
+							"result_base_dir": "",
+							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 76.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/Users/helgefredheim/Documents/silder/app/views/Form.jsx",
+					"settings":
+					{
+						"buffer_size": 5233,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								244,
+								244
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -1037,8 +1343,20 @@
 		"selected_items":
 		[
 			[
+				"form",
+				"app/views/Form.jsx"
+			],
+			[
 				"",
-				"lib/models/SubscriberModel.js"
+				"app/views/Form.jsx"
+			],
+			[
+				"variables.",
+				"assets/styles/vendor/kube/variables.less"
+			],
+			[
+				"frontpage",
+				"app/views/Frontpage.jsx"
 			],
 			[
 				"main",
@@ -1051,10 +1369,6 @@
 			[
 				"product",
 				"app/views/Products.jsx"
-			],
-			[
-				"frontpage",
-				"app/views/Frontpage.jsx"
 			],
 			[
 				"p",
@@ -1103,10 +1417,6 @@
 			[
 				"product-te",
 				"assets/styles/components/_product-teaser.less"
-			],
-			[
-				"form",
-				"assets/styles/_form.less"
 			],
 			[
 				"productcon",
@@ -1543,10 +1853,6 @@
 			[
 				"b",
 				"content/nav-design/snippets/button-rows.html"
-			],
-			[
-				"knapp",
-				"less/nytt/knapper.less"
 			]
 		],
 		"width": 0.0

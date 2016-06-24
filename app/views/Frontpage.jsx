@@ -20,7 +20,7 @@ var Frontpage = React.createClass({
 						<Header title='Silder' scrollToProducts={this.scrollToProducts} />
 					</div>
 					<Products id="products" title="Produkter" products={this.props.products} />
-					<About title="Om Silder" />
+					<About />
 					<section className="section section--share"> 
 						<div className="container">
 							<ShareOnSocialMedia title={"Silder"} url={"http://silder.no"} />

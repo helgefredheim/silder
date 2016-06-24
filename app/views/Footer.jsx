@@ -27,14 +27,7 @@ var Footer = React.createClass({
 	render: function() {
 		return 	<footer className="section footer">
 					<div className="container">
-
-						<NewsletterForm />
-
-						<ul className="pills pills--footer">
-							<li><a href="#">Betingelser</a></li>
-							<li><a href="#">Om Silder</a></li>
-							<li><a href="#">Kontakt</a></li>
-						</ul>
+						<p>SILDER &trade;</p>
 					</div> 
 				</footer>
 	}
