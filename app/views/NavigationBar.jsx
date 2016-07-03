@@ -19,7 +19,7 @@ var NavigationBar = React.createClass({
 	},
 
 	render: function() {
-		return <div className="page-header">
+		return <div className="page-header"> 
 					<header className="container container--site-logo">
 						<h1 className='site-logo site-logo--small'>
 							<a href="/">{this.props.title}</a>

@@ -103,7 +103,8 @@ var Gallery = React.createClass({
 var Product = React.createClass({
 
 	getDescription: function() {
-		return {__html: marked(this.props.description)}
+		var desc = this.props.description || "<p>Beskrivelse kommer senere.</p>";
+		return {__html: marked(desc)}
 	},
 
 	render: function() {
@@ -111,12 +112,16 @@ var Product = React.createClass({
 		var thumbnails;
 		var imageWidth = 800;
 		var imageHeight = 800; 
+		var images = this.props.images.filter(function(image) {
+			return image !== null;
+		});
 
 		return <div className="page page--product solid">
+					<p className="under-utvikling">Siden er under utvikling</p>
 					<NavigationBar title="Silder" />
 					<section className="container solid">
 						<div className="product"> 
-							<Gallery images={this.props.images} />
+							<Gallery images={images} />
 							<div className="product-details">
 								<div className="product-facts">
 									<h1 className="product-title">{this.props.productName}</h1>
