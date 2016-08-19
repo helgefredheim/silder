@@ -27,8 +27,8 @@ var Footer = React.createClass({
 	render: function() {
 		return 	<footer className="section footer">
 					<div className="container">
-						<p>SILDER &trade;</p>
-					</div> 
+						<p>SILDER &trade; - Martin Christensen - Telefon: 951 29 065 - <a data-pass-thru href="mailto:postmartin@gmail.com">E-post</a></p> 
+					</div>
 				</footer>
 	}
 });
