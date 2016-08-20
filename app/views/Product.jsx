@@ -112,9 +112,9 @@ var Product = React.createClass({
 		var thumbnails;
 		var imageWidth = 800;
 		var imageHeight = 800; 
-		var images = this.props.images.filter(function(image) {
+		var images = this.props.images ? this.props.images.filter(function(image) {
 			return image !== null;
-		});
+		}) : [];
 
 		return <div className="page page--product solid">
 					<p className="under-utvikling">Siden er under utvikling</p>

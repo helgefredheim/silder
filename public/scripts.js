@@ -310,7 +310,7 @@ var Footer = React.createClass({displayName: "Footer",
 	render: function() {
 		return 	React.createElement("footer", {className: "section footer"}, 
 					React.createElement("div", {className: "container"}, 
-						React.createElement("p", null, "SILDER ™")
+						React.createElement("p", null, "SILDER ™ - Martin Christensen - Telefon: 951 29 065 - ", React.createElement("a", {"data-pass-thru": true, href: "mailto:postmartin@gmail.com"}, "E-post"))
 					)
 				)
 	}
@@ -792,9 +792,9 @@ var Product = React.createClass({displayName: "Product",
 		var thumbnails;
 		var imageWidth = 800;
 		var imageHeight = 800; 
-		var images = this.props.images.filter(function(image) {
+		var images = this.props.images ? this.props.images.filter(function(image) {
 			return image !== null;
-		});
+		}) : [];
 
 		return React.createElement("div", {className: "page page--product solid"}, 
 					React.createElement("p", {className: "under-utvikling"}, "Siden er under utvikling"), 

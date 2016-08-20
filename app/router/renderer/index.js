@@ -15,7 +15,8 @@ RendererServer.prototype.render = function(component, req, res) {
   var html = ReactDOMServer.renderToString(component);
 
   var locals = {
-    body: html
+    body: html,
+    title: "Silder"
   };
 
   wrapWithLayout(locals, function(err, layoutHtml) {
